@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ENFERMEDAD LABORAL</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/jquery-ui.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/tipso.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/animate.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/formato.css">
+
+<body>
+	<input type="hidden" val="0" class="position" name="position">
+
+	<div class="col-10 title-head">
+		<h1 class="card-title">FORMATO INVESTIGACIÓN DE ENFERMEDAD LABORAL</h1>
+	</div>
+
+	<div class="header-format">
+		<div class="divlogo clearfix">
+			<div class="logo-format"><img src="logo-ejercito.png" alt=""></div>
+			<div class="text-format-1">
+				MINISTERIO DE DEFENSA NACIONAL	<br>	
+				COMANDO GENERAL DE LAS FUERZAS MILITARES	<br>	
+				EJERCITO NACIONAL		<br>
+				COMANDO DE PERSONAL		<br>
+				SISTEMA DE GESTIÓN SST		<br>
+			</div>
+			<div class="text-format-2">
+				Código: FO-COPER-DIPSE-462	 <br>
+				Versión: 1 <br>
+				Fecha de emisión: 2016-09-06 <br>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tool-box"><i class="fa fa-home" id="home"> Inicio</i></div>
+
+
+
+<div class="section-1" style="display:block">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+
+
+<form method="post" id="section-1">
+
+		<div class="row clearfix texture">
+	
+		<div class="title-row titleh">1. INFORMACION DEL EMPLEADOR</div>
+		
+		<div class="col-5"> <label>1.1 NIT institución:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nitIns" name="nitIns" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>1.2 NIT Contratista:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nitContra" name="nitContra" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>1.3 Nombre de la actividad economica principal:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nomActi" name="nomActi" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>1.4 Código de la actividad económica:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="codActi" name="codActi" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>1.5 Tipo de vinculación laboral</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tipoVincuLab" name="tipoVincuLab" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>1.6 Dirección principal:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dirPrin" name="dirPrin" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>1.7 Telefono:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tele" name="tele" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>1.8 Correo electrónico:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="corElec" name="corElec" value="" >				</span>
+		</div>
+		
+
+
+		<div class="title-row titleh">2. INFORMACION DE LA INVESTIGACION</div>
+		<div class="col-5"> <label>2.1 Fecha de la investigación   </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dateIniInv" name="dateIniInv" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>2.2 Enfermedad Laboral mortal</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enfLab" name="enfLab" value="" >				</span>
+		</div>
+		<div class="col-5"><label>2.3 Material anexo audiovisual anexo (especificar cantidad)</label>
+				<span class="i-box">
+					<select class="srequire" name="matAne" id="matAne">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>2.3.1 Catidad de Materia Anexo:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="cantMat" name="cantMat" value="" >				</span>
+		</div>
+
+		<div class="title-row ">2.4 Lugar de la novedad:</div>
+		<div class="col-3"><label>Pais </label>
+				<span class="i-box">
+					<select class="srequire" name="lugarNov" id="lugarNov">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>Departamento </label>
+				<span class="i-box">
+					<select class="srequire" name="departamento" id="departamento">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>Zona </label>
+				<span class="i-box">
+					<select class="srequire" name="zona" id="zona">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"> <label>Cuidad: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="cuidad" name="cuidad" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>Vereda: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="vereda" name="vereda" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>Coordenadas/Direccion: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="coorDir" name="coorDir" value="" >				</span>
+		</div>
+
+
+
+		<div class="title-row ">2.5 Responsable de la investigación</div>
+		<div class="col-5"> <label>2.5.1 Nombres y apellidos: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nomApe" name="nomApe" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>2.5.2 Profesión: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="profe" name="profe" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>2.5.3 Nº licencia de salud ocupacional: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="licSalud" name="licSalud" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>2.5.4 Hora en que se realizo la investigación: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="horaIns" name="horaIns" value="" >				</span>
+		</div>
+
+
+		<div class="title-row ">2.6 Unidad</div>
+		<div class="col-3"><label>Jefatura de Estado Mayor: </label>
+				<span class="i-box">
+					<select class="srequire" name="jem" id="jem">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>División o Comando: </label>
+				<span class="i-box">
+					<select class="srequire" name="div" id="div">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>Brigada/Dirección/Regimiento: </label>
+				<span class="i-box">
+					<select class="srequire" name="br" id="br">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>Unidad Táctica: </label>
+				<span class="i-box">
+					<select class="srequire" name="uniTac" id="uniTac">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>Fuerza de Tarea: </label>
+				<span class="i-box">
+					<select class="srequire" name="ft" id="ft">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>CEDE: </label>
+				<span class="i-box">
+					<select class="srequire" name="cede" id="cede">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		
+
+
+		<div class="title-row titleh">3. DATOS GENERALES DEL TRABAJADOR</div>
+		<div class="col-5"> <label>3.1 Nombres y Apellidos:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nomApeTrab" name="nomApeTrab" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.2 Arma / Cuerpo o Especialidad:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="especialidad" name="especialidad" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.3 Documento de identidad:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="id" name="id" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.4 Fecha de nacimiento:   </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaNac" name="fechaNac" value="" >				</span>
+			</div>
+		<div class="col-5"> <label>3.5 Lugar de nacimiento:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="lugarNac" name="lugarNac" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.6 Nombre de la actividad economica principal:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="actEconoPrin" name="actEconoPrin" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.7 Código de la actividad económica:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="idActi" name="idActi" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.8 Tiempo total en el Ejército:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tiemEje" name="tiemEje" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.9 Tiempo en la unidad:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tiemUni" name="tiemUni" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.10 Dirección de residencia:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dir" name="dir" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.11 Ciudad:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="cuidadDir" name="cuidadDir" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.12 Teléfono celular:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tele" name="tele" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.13 Edad:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="edad" name="edad" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.14 Sexo</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="sexo" name="sexo" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.15 Estado civil:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="estadoCivil" name="estadoCivil" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.16 Escolaridad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="escolaridad" name="escolaridad" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.16 Servicio de salud: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ServiSalud" name="ServiSalud" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.17 EPS (Entidad prestadora de salud)</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="eps" name="eps" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.18 ARL (Administradora de riesgos laborales)</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="arl" name="arl" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.19 Tipo De Vinculación:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tipoVincula" name="tipoVincula" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.20 ¿Ha sufrido accidentes o lesiones autoinflidas o intento de suicidio con anterioridad?</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="acciAnterior" name="acciAnterior" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.21 Actividad/Estado: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="actiEstado" name="actiEstado" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.22 AFP (Administradora Privada de Fondos de Pensiones)  a la que esta afiliado:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="afp" name="afp" value="" >				</span>
+		</div>
+		
+
+		<div class="title-row ">3.23 EXCLUSIVO PARA CONTRATISTAS POR PRESTACION DE SERVICIOS</div>
+		<div class="col-5"> <label>3.23.1 OBJETO DE CONTRATO ACTUAL: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="objeContra" name="objeContra" value="" >				</span>
+		</div>		
+		<div class="col-5"> <label>3.24 Tiempo de Contrato</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tiemContr" name="tiemContr" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.25 FECHA INICIO DEL CONTRATO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaIniContra" name="fechaIniContra" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.26 FECHA INICIO DEL CONTRATO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaFinContra" name="fechaFinContra" value="" >				</span>
+		</div>
+
+
+		<div class="title-row ">3.27 INFORMACION SOBRE EL CARGO</div>
+		<div class="col-5"> <label>3. 28 Grado: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="grado" name="grado" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.29 Cargo de nombramiento:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="cargonombrado" name="cargonombrado" value=""  >				</span>
+		</div>
+		<div class="col-5"> <label>3.30 Tiempo De Experiencia en el cargo:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tiemExpeCargo" name="tiemExpeCargo" value=""  >				</span>
+		</div>
+		<div class="col-5"> <label>3.31 Ocupacion habitual  (CIUO):</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ocupaHabitual" name="ocupaHabitual" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.12 Teléfono celular:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="teleCargo" name="teleCargo" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.32 Código ocupación habitual:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="codiOcupaHabitual" name="codiOcupaHabitual" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.33 Jornada de Trabajo:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="jornaTraba" name="jornaTraba" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.34 Tiempo ocupacion habitual: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tiemOcupaHabitual" name="tiemOcupaHabitual" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>3.35 La enfermedad Laboral causó la muerte del trabajador?:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferCausoMuerte" name="enferCausoMuerte" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>3.36 Fecha muerte trabajador: </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaMuerte" name="fechaMuerte" value="" placeholder="DDMMAA" >				</span>
+		</div>
+		<div class="col-3"><label>3.37 La exposicion ocurrió en el cargo actual?: </label>
+				<span class="i-box">
+					<select class="srequire" name="exposicionCargoActual" id="exposicionCargoActual">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+
+
+
+		<div class="title-row ">3.38 Solo en caso negativo diligenciar:</div>
+		<div class="col-3"> <label>Nombre del cargo </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nombreCargo" name="nombreCargo" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>Antigüedad en el cargo</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="antigüeCargo" name="antigüeCargo" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>Jornada de trabajo del cargo:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="jonadaTrabajo" name="jonadaTrabajo" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.39 TAREAS DEL CARGO RELACIONADO CON LA ENFERMEDAD LABORAL </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tareaCArgoEnferme" name="tareaCArgoEnferme" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.40 Dedicacion jornada laboral</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dedicaJornadaLab" name="dedicaJornadaLab" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>3.41 Relacion con la enfermedad laboral</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="relacionEnferLab" name="relacionEnferLab" value="" >				</span>
+		</div>
+		
+
+
+		<div class="title-row ">3.42 MEDIDAS PREVENTIVAS ASUMIDAS RELACIONADAS CON LA ENFERMEDAD LABORAL INVESTIGADA</div>
+		<div class="col-3"><label>3.43 Formacion e informacion  </label>
+				<span class="i-box">
+					<select class="srequire" name="formacionInfo" id="formacionInfo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>3.44 Proteccion colectiva  </label>
+				<span class="i-box">
+					<select class="srequire" name="proteccolectiva" id="proteccolectiva">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>3.45 EPP </label>
+				<span class="i-box">
+					<select class="srequire" name="epp" id="epp">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>3.46 Diseño puesto de trabajo </label>
+				<span class="i-box">
+					<select class="srequire" name="disPuestoTraja" id="disPuestoTraja">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>3.47 Organización del trabajo </label>
+				<span class="i-box">
+					<select class="srequire" name="organiTraba" id="organiTraba">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>3.48 ¿Se ha realizado evaluacion del puesto de trabajo con fines preventivos? </label>
+				<span class="i-box">
+					<select class="srequire" name="evaluaPuestoTraba" id="evaluaPuestoTraba">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>3.49 Si se generaron recomendaciones estas? fueron implementadas? </label>
+				<span class="i-box">
+					<select class="srequire" name="relacioImpletadas" id="relacioImpletadas">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"> <label>3.50 Observaciones </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="observaMediasPreven" name="observaMediasPreven" value="" >				</span>
+		</div>
+		<div class="col-3"><label>3.51 ¿esta persona ha realizado actividades no habituales en su trabajo que hallan podido ocasionar exposiciones importantes? </label>
+				<span class="i-box">
+					<select class="srequire" name="opcionActividad" id="opcionActividad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"> <label>3.52 Descripcion </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="descripOpcionActividad" name="descripOpcionActividad" value="" >				</span>
+		</div>
+		
+
+		<div class="title-row ">3. ANTECEDENTES ACCIDENTE DE TRABAJO - AT</div>
+			<div class="col-3"> <label>Fecha del accidente de trabajo</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaAccidenteTraba" name="fechaAccidenteTraba" value="" >				</span>
+			</div>
+		<div class="col-3"><label>Reportado </label>
+				<span class="i-box">
+					<select class="srequire" name="reporteAccidente" id="reporteAccidente">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-3"><label>Secuelas </label>
+				<span class="i-box">
+					<select class="srequire" name="secuelasAccidente" id="secuelasAccidente">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+		<div class="col-5"> <label>Descripción: ( tipo de accidente, parte del cuerpo afectada y secuelas)</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="descripcionAccidente" name="descripcionAccidente" value="" >				</span>
+		</div>
+
+
+		
+
+
+		<div class="title-row titleh"> 4. INFORMACION SOBRE LA ENFERMEDAD LABORAL - EL</div>
+			<div class="col-5"> <label>FECHA DE ESTRUCTURACIÓN DE LA ENFERMEDAD LABORAL</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaEnfermedad" name="fechaEnfermedad" value="" >				</span>
+			</div>
+		<div class="col-5"> <label>FECHA DE CALIFICACIÓN EN 1ra OPORTUNIDAD</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaCalificacion" name="fechaCalificacion" value="" >				</span>
+			</div>
+		<div class="col-5"> <label>EPS</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="eps" name="eps" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>JUNTAS DE CALIFICACIÓN</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="juntaCalificacion" name="juntaCalificacion" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>ARL</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="arl" name="arl" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>DETERMINACIÓN DEL ORIGEN</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="deterOrigen" name="deterOrigen" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>DIAGNÓSTICO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="diagnosico" name="diagnosico" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>CÓDIGO CIE</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="idCie" name="idCie" value="" >				</span>
+		</div>
+		<div class="col-3"> <label>GRUPO DE ENFERMEDAD</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="grupoEnfermedad" name="grupoEnfermedad" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>No. trabajadores en el mismo cargo o cargos similares</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="trabMismoCarco" name="trabMismoCarco" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>Cargos similares</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="cargosSimilares" name="cargosSimilares" value="" >				</span>
+		</div>
+
+
+		<div class="col-5"> <label>No. trabajadores en este(os) cargo(s) que han presentado la misma enfermedad o enfermedades similares en alguna ocasión </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="numTrabEnferMismoCargo" name="numTrabEnferMismoCargo" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>Diagnosticos similares en codigo CIE</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="diagnisticoCodioCie" name="diagnisticoCodioCie" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>Nombres y Apellidos</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nomApeEnferLab" name="nomApeEnferLab" value="" >				</span>
+		</div>
+		<div class="col-5"> <label>Año de Diagnostico</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="añoDiag" name="añoDiag" value="" >				</span>
+		</div>
+		
+		
+
+
+
+
+		<div class="title-row titleh"> 5. ANALISIS DE LAS CAUSAS</div>
+			<div class="col-5"> <label>NOMBRE DEL CARGO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="causaNombreCargo" name="causaNombreCargo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>TIEMPO DE EXPOSICION EN MESES</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="tiempoExpoMes" name="tiempoExpoMes" value="" >				</span>
+			</div>
+			<div class="col-3"><label>Fisico </label>
+				<span class="i-box">
+					<select class="srequire" name="causaFisico" id="causaFisico">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Quimico </label>
+				<span class="i-box">
+					<select class="srequire" name="causaQuimico" id="causaQuimico">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Biologico </label>
+				<span class="i-box">
+					<select class="srequire" name="causaBiolo" id="causaBiolo">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Psicosocial </label>
+				<span class="i-box">
+					<select class="srequire" name="causaPsico" id="causaPsico">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Carga fìsica </label>
+				<span class="i-box">
+					<select class="srequire" name="causaCarga" id="causaCarga">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Seguridad </label>
+				<span class="i-box">
+					<select class="srequire" name="causaSegur" id="causaSegur">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			
+
+			
+
+			<div class="title-row "> Enfermedades laborales producidas por agentes físicos</div>
+			<div class="title-row "> 1. RUIDO</div>
+			<div class="col-5"> <label>Cargo / puesto</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoCargo" name="ruidoCargo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Fuentes</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoFuente" name="ruidoFuente" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Tiempo de Exposición en Meses</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoTiemMes" name="ruidoTiemMes" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Tiempo de Exposición en Horas</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoTiemHora" name="ruidoTiemHora" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Nivel Ambiental</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoNivel" name="ruidoNivel" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Fecha de medición</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="druidoFechaMedicion" name="druidoFechaMedicion" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Dosis Ruido</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoDosis" name="date-novedad" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Exposiciones a sustancias quimicas ototóxicas</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="ruidoExposiQuimicas" name="ruidoExposiQuimicas" value="" >				</span>
+			</div>
+
+
+			
+
+			<div class="title-row "> 2. Estrés térmico</div>
+			<div class="col-5"> <label>Cargo / puesto</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="estresCargo" name="estresCargo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Descripción de la actividad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="estresActividad" name="estresActividad" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Tasa de trabajo / descanso</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="estresTrabajo" name="estresTrabajo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Nivel Ambiental</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="estresNivel" name="estresNivel" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Fecha de medición</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="estresFecha" name="estresFecha" value="" >				</span>
+			</div>
+
+			<div class="title-row "> 3. Iluminación / Radiaciaciones</div>
+			<div class="col-5"> <label>Cargo / puesto</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="iluminCArgo" name="iluminCArgo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Descripción de la actividad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="iluminDescrip" name="iluminDescrip" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Tasa de trabajo / descanso</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="iluminTrabajo" name="iluminTrabajo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Nivel de exposición</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="iluminNivel" name="iluminNivel" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Fecha de medición</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="iluminFecha" name="iluminFecha" value="" >				</span>
+			</div>
+
+
+
+
+			<div class="title-row "> Enfermedades laborales producidas por agentes quimicos, afecciones cutáneas e inhalación de sustancias</div>
+			<div class="col-5"> <label> Cargo / puesto</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enfermeCArgo" name="enfermeCArgo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Identificación de los agentes quimicos relacionados con la enfermedad laboral</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferAgentes" name="enferAgentes" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>  Via de entrada</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferVia" name="enferVia" value="" >				</span>
+			</div>
+			<div class="col-3"><label>Tipo de Actividad Rutinaria </label>
+				<span class="i-box">
+					<select class="srequire" name="enferTipo" id="enferTipo">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-5"> <label> Tiempo de Exposición en Meses </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enfertiempoMes" name="enfertiempoMes" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Tiempo de Exposición Horas dia</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferTiempoDia" name="enferTiempoDia" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> TLV Corregido</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferTlv" name="enferTlv" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Concentración Hallada</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferConcentra" name="enferConcentra" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Grado de riesgo</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferGrado" name="enferGrado" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Fecha de Medicion</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferFecha" name="enferFecha" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Actividades realizadas relacionadas previas con la enfermedad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="enferActivi" name="enferActivi" value="" >				</span>
+			</div>
+
+
+			
+			<div class="title-row ">Enfermedades laborales productos por agentes biológicos</div>
+			<div class="col-5"> <label> Cargo / puesto</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="bioloCargo" name="bioloCargo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Identificación de los agentes quimicos relacionados con la enfermedad laboral</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="bioloIdenti" name="bioloIdenti" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Clasificación del agente</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="biloClasifi" name="biloClasifi" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Posible mecanismo de trasmisión</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="bioloPosible" name="bioloPosible" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Exposiciones accidentales previas relacionadas con la enfermedad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="bioloExposi" name="bioloExposi" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Medidas Preventivas</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="bioloMedida" name="bioloMedida" value="" >				</span>
+			</div>
+			
+
+				
+			
+
+			<div class="title-row ">Enfermedades laborales producidas por agentes Psicosociales</div>
+			<div class="col-3"><label>Aplicación de la batería </label>
+				<span class="i-box">
+					<select class="srequire" name="psicoAplica" id="psicoAplica">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"> <label>Fecha de aplicación   </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="psicoFecha" name="psicoFecha" value="" >				</span>
+			</div>
+			<div class="col-3"><label>Condición intralaboral </label>
+				<span class="i-box">
+					<select class="srequire" name="psicointra" id="psicointra">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Condición extralaboral </label>
+				<span class="i-box">
+					<select class="srequire" name="psicoExtra" id="psicoExtra">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Nivel de estrés </label>
+				<span class="i-box">
+					<select class="srequire" name="psicoEstes" id="psicoEstes">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Nivel de riesgo individual </label>
+				<span class="i-box">
+					<select class="srequire" name="psicoRiesgo" id="psicoRiesgo">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+
+
+			<div class="title-row ">DOMINIOS</div>
+			<div class="col-2"><label>Demandas de trabajo </label>
+				<span class="i-box">
+					<select class="srequire" name="dominDemanda" id="dominDemanda">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-2"><label>Control en el trabajo </label>
+				<span class="i-box">
+					<select class="srequire" name="dominControl" id="dominControl">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-2"><label>Liderazgo y relaciones sociale </label>
+				<span class="i-box">
+					<select class="srequire" name="dominLider" id="dominLider">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-2"><label>Recompensa </label>
+				<span class="i-box">
+					<select class="srequire" name="dominRecompen" id="dominRecompen">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-5"> <label> Demandas de trabajo (Tarea)</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominTarea" name="dominTarea" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Frecuencia de presentación</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominFrecu" name="dominFrecu" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Tiempo de exposición</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominTiempo" name="dominTiempo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Intensidad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominInten" name="dominInten" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Observaciones</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominObj" name="dominObj" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Si el evento investigado es por accidente que genera compromiso psiquiátrico ampliee la información que considere necesaria de las condiciones en las que este se presento en terminos de tiempo, modo y lugar.</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominPsiquiatrico" name="dominPsiquiatrico" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Otras Variables psicosociales</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominOtrasVaribles" name="dominOtrasVaribles" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Vulnerabilidad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominVulnera" name="dominVulnera" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Observaciones</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="dominObj" name="dominObj" value="" >				</span>
+			</div>
+			
+
+			<div class="title-row ">Enfermedades laborales producidas por agentes carcinogénicos</div>
+			<div class="col-5"> <label>Cargo / puesto</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciCargo" name="carciCargo" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Identificación de los agentes carcinogénicos relacionados con la enfermedad laboral</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciIdenti" name="carciIdenti" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Clasificación del agente carcinogénico</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciClasi" name="carciClasi" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Tiempo de Exposición Meses</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciTiempoMes" name="carciTiempoMes" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Tiempo de Exposición Horas Dia</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciTiemDia" name="carciTiemDia" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Nivel Ambiental</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciNivel" name="carciNivel" value="" >				</span>
+			</div>
+			<div class="col-5"> <label> Fecha de medición</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciFecha" name="carciFecha" value="" >				</span>
+			</div>
+			<div class="col-5"> <label>Parte del cuerpo expuesta</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="carciParte" name="carciParte" value="" >				</span>
+			</div>
+
+			<div class="title-row ">Enfermedades laborales producidas por cargas fisicas</div>
+			<div class="title-row ">CARGA ESTATICA</div>
+			<div class="col-3"><label>POSTURA </label>
+				<span class="i-box">
+					<select class="srequire" name="estaticPostura" id="estaticPostura">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>PROLONGADA </label>
+				<span class="i-box">
+					<select class="srequire" name="estaticProlon" id="estaticProlon">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>MANTENIDA </label>
+				<span class="i-box">
+					<select class="srequire" name="estaticmante" id="estaticmante">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>INADECUADA </label>
+				<span class="i-box">
+					<select class="srequire" name="estaticinade" id="estaticinade">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>FORZADA O EXTREMA </label>
+				<span class="i-box">
+					<select class="srequire" name="estaticForzada" id="estaticForzada">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>ANTIGRAVITACIONAL </label>
+				<span class="i-box">
+					<select class="srequire" name="estaticAntigra" id="estaticAntigra">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			
+
+			<div class="title-row ">CARGA DINAMICA</div>
+			<div class="col-4"><label>MOVIMIENTOS REPETITIVOS  </label>
+				<span class="i-box">
+					<select class="srequire" name="dinaMovi" id="dinaMovi">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-4"><label>LEVANTAMIENTO DE CARGA </label>
+				<span class="i-box">
+					<select class="srequire" name="dinaLevanta" id="dinaLevanta">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-4"><label>TRANSPORTE DE CARGA </label>
+				<span class="i-box">
+					<select class="srequire" name="dinaTrans" id="dinaTrans">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			
+
+			<div class="title-row ">DISEÑO DEL PUESTO DE TRABAJO</div>
+			<div class="col-2"><label>PLANO DE TRABAJO </label>
+				<span class="i-box">
+					<select class="srequire" name="puestoPlano" id="puestoPlano">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-2"><label>HERRAMIENTAS DE TRABAJO </label>
+				<span class="i-box">
+					<select class="srequire" name="puestoHerrami" id="puestoHerrami">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+
+			<div class="col-5"> <label>OBSERVACIONES:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="puestoObj" name="puestoObj" value="" >				</span>
+			</div>
+
+
+
+
+			<div class="title-row titleh">6. GESTIÒN DEL RIESGO </div>
+			<div class="col-full"> 
+				<span class="i-box">
+					<input type="text" class="trequire" id="gestionRies" name="gestionRies" value="" >				</span>
+			</div>
+
+
+			<div class="title-row titleh">7. METODOLOGIA ANALISIS CAUSAL </div>
+			<div class="col-full"> 
+				<span class="i-box">
+					<input type="text" class="trequire" id="metodologia1" name="metodologia1" value="" placeholder="1 ¿POR QUÉ?" >		</span>
+			</div>
+			<div class="col-full"> 
+				<span class="i-box">
+					<input type="text" class="trequire" id="metodologia2" name="metodologia2" value="" placeholder="2 ¿POR QUÉ?" >		</span>
+			</div>
+			<div class="col-full"> 
+				<span class="i-box">
+					<input type="text" class="trequire" id="metodologiaClasi" name="metodologiaClasi" value="" placeholder="CLASIFICACION DE LA CAUSA RAIZ">				</span>
+			</div>
+
+
+
+			<div class="title-row titleh">8. ANÁLISIS DE CAUSAS </div>
+			<div class="title-row ">El análisis de causas se hace teniendo en cuenta los factores estipulados en la norma NTC-3701 “Guía para la clasificación, registro y estadística de accidentes de trabajo y enfermedad profesional". Seleccione el (los) elemento(s) correspondiente(s) en cada casilla. </div>
+
+			<div class="title-row ">CAUSAS DIRECTAS O INMEDIATAS </div>
+			<div class="col-3"> <label>CONDICIONES INSEGURAS O SUBESTÁNDAR</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="causaCondi" name="causaCondi" value="" >				</span>
+			</div>
+			<div class="col-2"> <label>CÓDIGO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="causaCodigo" name="causaCodigo" value="" >				</span>
+			</div>
+			<div class="col-2"> <label>FACTORES PERSONALES</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="causaFactor" name="causaFactor" value="" >				</span>
+			</div>
+			<div class="col-2"> <label>CÓDIGO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="causaCodFactor" name="date-novedad" value="" >				</span>
+			</div>
+			<div class="title-row ">CAUSAS DIRECTAS O INMEDIATAS </div>
+			<div class="col-3"> <label>FACTORES DE TRABAJO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="factorTrabajo" name="factorTrabajo" value="" >				</span>
+			</div>
+			<div class="col-2"> <label>CÓDIGO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="factorTrabCodigo" name="factorTrabCodigo" value="" >				</span>
+			</div>
+			<div class="col-2"> <label>FACTORES PERSONALES</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="factorPerso" name="factorPerso" value="" >				</span>
+			</div>
+			<div class="col-2"> <label>CÓDIGO</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="factorpersonCodiTrab" name="factorpersonCodiTrab" value="" >				</span>
+			</div>
+			<div class="col-full"> 
+				<span class="i-box">
+					<input type="text" class="trequire" id="factorConclu" name="factorConclu" value="" placeholder="Conclusiones de la investigación de las causas (Enfermedad Laboral):">				</span>
+			</div>
+
+			
+
+		<div class="next next1" data-pag="1">Siguiente Módulo</div>
+		</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+
+
+<script src="http://soouse.com/sesat/platform/js/jquery-1.12.0.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/jquery-ui.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/tipso.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/functions.js"></script>
+
+<link rel="stylesheet" href="include/sweetalert2/sweetalert2.min.css">
+<script src="include/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+	//GetId
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	var idMain = getParameterByName("id");
+	$(".position").val(idMain);
+	$(".reporteNo").html(idMain);
+	//Listas
+	$.ajax({
+		    url : 'http://soouse.com/sesat/controller/getListsData.php',
+		    data : {},
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		        console.log(json);
+		        createOptions(json);
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema al cargar las listas');
+		    }
+	});
+	function createOptions(json) {
+		$.each(json, function(i, item) {
+			for (var j = 0; j < json[i].id.length; j++) {
+				$("#"+i).append('<option value="'+json[i].id[j]+'">'+json[i].nameItem[j]+'</option>');
+			}
+		});
+	}
+	//Fecha actual
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var f = new Date();
+
+
+
+	$(".date-ini").val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+	//Dates
+
+	$( "#dateIniInv" ).datepicker({ changeMonth: true, changeYear: true });
+
+	$( "#date-novedad" ).datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").change(function(){
+		var ed = calcular_edad($("#date-nacimiento").val());
+		$("#edad").html(ed+" Años");
+	});
+	//Checkbox function
+	$('input[type="checkbox"]').on('change', function() {
+	var pare = $(this).parent();
+	var paren = $(pare).parent();
+	var parent = $(paren).parent();
+	if(!$(parent).hasClass('multiple')){
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+	}
+	});
+
+
+//Form next
+$('.next').click(function(){
+	var pag = $(this).data('pag');
+	console.log("data:"+pag);
+	var errorst = 0;
+	var errorss = 0;
+    $(".section-"+pag+" .trequire").map(function(){
+        if( !$(this).val() ) { 
+        	$(this).addClass('warning'); errorst++;
+        } else if ($(this).val()) {
+        	$(this).removeClass('warning');
+        }   
+    });
+    $(".section-"+pag+" .srequire").map(function(){
+        if( $(this).val() == 0 ) { 
+        	$(this).addClass('warning'); errorss++;
+        } else if ($(this).val() != 0) {
+        	$(this).removeClass('warning');
+        }   
+    });
+	console.log("errors found text:"+errorst);
+	console.log("errors found select:"+errorss);
+
+    if(false){
+        alert("Hay un campo sin completar, verifique por favor.");
+    } else {
+    	var datanum = $(this).data("pag");
+    	if(datanum==9){
+			$(".boxadd").each(function(){
+				var formData = new FormData();
+				var position = $(".position").val();
+				var type = $(this).data("type");
+				var datas = $(this).serialize();
+				console.log(datas);
+				$.ajax({
+				    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+				    data : datas+'&type='+type+'&position='+position,
+				    type : 'POST',
+				    dataType : 'json',
+				    success : function(json) {
+				    	console.log(json)
+				        if(json.status>0){
+				        $(".section-"+pag).hide();
+				    	console.log(pag);
+				    	var pag_2 = pag+1;
+				    	console.log(pag_2);
+				    	$(".section-"+pag_2).fadeIn();
+				    	$('#up').click();
+				    	}
+				    },
+				    error : function(xhr, status) {
+				        alert('Disculpe, existió un problema');
+				    }
+				});
+
+			});
+		} else if(datanum==10){
+				var inputFile = document.getElementById("final-file");
+				var image = inputFile.files[0];
+				var form_data = new FormData();  
+				var position = $(".position").val();
+				form_data.append('position',position);  
+				form_data.append('file',image); 
+				console.log(form_data);
+				$.ajax({
+                url: 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php', 
+            	type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                success: function(data){
+				var dat = data.trim();
+				console.log(dat);
+					if(dat>"0"){
+						swal(
+						    'Firmas enviadas!',
+						    'Proceso Completo.',
+						    'success'
+						  )
+						location.href = "../home/home.html";
+					} else if(dat=="0"){
+						swal(
+						    'Error!',
+						    'Intente nuevamente.',
+						    'warning'
+						  )
+					}
+				}
+				});
+		} else {
+		var data = $("#section-"+datanum).serialize();
+		console.log(data);
+		$.ajax({
+		    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+		    data : data,
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		    	console.log(json)
+		        if(json.status>0){
+		        $(".section-"+pag).hide();
+		    	console.log(pag);
+		    	var pag_2 = pag+1;
+		    	console.log(pag_2);
+		    	$(".section-"+pag_2).fadeIn();
+		    	$('#up').click();
+		    	}
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema');
+		    }
+		});
+		}
+    }
+});
+
+$('.dinamico input[type="checkbox"]').on('change', function() {
+if (this.checked && $(this).hasClass('depende')) {
+	$(".opcional").fadeIn();
+} else {
+	$('.opcional').fadeOut();
+}
+});
+
+$("#novedad-interna-fuerza").change(function(){
+	if($(this).val()!=1){
+		$("#section-5").hide();
+	}
+})
+
+$(".plan").click(function(){
+	var box = $(this).data("box");
+	$(".box"+box).append('<form class="boxadd" data-type="'+box+'" method="post"><div class="col-5"><label>10.1.1 Acciones preventivas y/o correctivas</label><span class="i-box"><input type="text" class="require" id="plan-accion-prev" name="plan-accion-prev" placeholder="" ></span></div><div class="col-5"><label>10.1.2 Responsable de la ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-res" name="plan-accion-res" placeholder="" ></span></div><div class="col-5"><label>10.1.3 Fecha de ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-exe" name="plan-accion-date-exe" placeholder="" ></span></div><div class="col-5"><label>10.1.4 Recursos</label><span class="i-box"><input type="text" class="require" id="plan-accion-recursos" name="plan-accion-recursos" placeholder="" ></span></div><div class="col-5"><label>10.1.5 Responsable de hacer cumplir la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-res-cumplir" name="plan-accion-res-cumplir" placeholder="" ></span></div><div class="col-5"><label>10.1.6 Fecha de verificación de cierre de la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-close" name="plan-accion-date-close" value="Fecha Ajustada por Directivas" disabled></span></div></form>');
+
+})
+
+$("#home").click(function(){
+	location.href = "../home/home.html";
+});
+</script>
+</body>
+</html>

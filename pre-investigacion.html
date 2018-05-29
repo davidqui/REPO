@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SESAT | Administración</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/jquery-ui.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/tipso.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/animate.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<style>
+	body { font-family: 'Open Sans', sans-serif;  }
+	.title-head {margin-top: 55px;}
+	.header-format {position: relative;padding: 10px;}
+	.logo-format {float: left;max-width: 110px}  .logo-format img {width: 100%}
+	.text-format-1 {    float: right;width: 60%;font-size: 14px;}
+	.text-format-2 {float: left;width: 100%;padding: 10px;font-size: 12px;background: #d2d2d2;margin-top: 10px;}
+	sublabel {font-size: 12px;padding: 0 10px;}
+	.titleh {background: #a23434;font-size: 20px;padding: 15px 10px;}
+	.titleh2 {background: #eb8f00;font-size: 20px;}
+	.boxadd {padding: 20px 10px;float: left;background: #909090;margin: 15px 0;}
+	.add-item { cursor: pointer;   float: left;width: 100%;background: #a23434;color: white;padding: 10px;text-align: center;border-bottom: 4px solid #751a19;}
+	.inf {background: #a23434;float: left;color: white;width: 100%;padding: 15px;font-size: 25px;text-align: center;border-bottom: 4px solid #691b1a;}
+</style>
+<body>
+	<input type="hidden" val="0" class="position" name="position">
+
+	<div class="col-10 title-head">
+		<h1 class="card-title">REPORTE PRELIMINAR DE INCIDENTES Y ACCIDENTES DE TRABAJO</h1>
+	</div>
+
+	<div class="header-format">
+		<div class="divlogo clearfix">
+			<div class="logo-format"><img src="logo-ejercito.png" alt=""></div>
+			<div class="text-format-1">
+				MINISTERIO DE DEFENSA NACIONAL	<br>	
+				COMANDO GENERAL DE LAS FUERZAS MILITARES	<br>	
+				EJERCITO NACIONAL		<br>
+				COMANDO DE PERSONAL		<br>
+				SISTEMA DE GESTIÓN SST		<br>
+			</div>
+			<div class="text-format-2">
+				Código: FO-COPER-DIPSE-468	 <br>
+				Versión: 1 <br>
+				Fecha de emisión: 2016-12-13 <br>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tool-box"><i class="fa fa-arrow-left" id="gyv"></i></div>
+
+<div class="section-1" style="display:block">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">PreInforme Accidente / Incidentes<span id="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<form method="post" id="section-1">
+
+			<div class="title-row titleh2">Adjunta Documento de Pre-informe</div>
+			
+			<div class="title-row">Adjunto</div>
+			<div class="col-5"> <label>Seleccione Archivo</label>
+				<span class="i-box">
+					<input type="file" class="require" id="final-file" name="final-file" placeholder="" >
+				</span>
+			</div>
+
+
+
+			<div class="line"></div>
+			<div class="next" data-pag="1">Enviar</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-2" style="display:none">
+
+<form method="post" id="section-2">
+			<div class="title-row titleh2">Preinvestigación Enviada</div>
+			<div class="title-row">Ahora puedes completar el formato de investigación</div>
+			<div class="line"></div>
+			<div class="inf">Ir Formulario</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+<script src="http://soouse.com/sesat/platform/js/jquery-1.12.0.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/jquery-ui.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/tipso.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/functions.js"></script>
+
+<link rel="stylesheet" href="include/sweetalert2/sweetalert2.min.css">
+<script src="include/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+	//Fecha actual
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var f = new Date();
+	$(".date-ini").val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+	//Dates
+	$( "#date-analisis" ).datepicker({ changeMonth: true, changeYear: true });
+	//Checkbox function
+	$('input[type="checkbox"]').on('change', function() {
+	var pare = $(this).parent();
+	var paren = $(pare).parent();
+	var parent = $(paren).parent();
+	if(!$(parent).hasClass('multiple')){
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+	}
+	});
+
+
+//Form next
+$('.next').click(function(){
+				var inputFile = document.getElementById("final-file");
+				var image = inputFile.files[0];
+				var form_data = new FormData();  
+				form_data.append('file',image); 
+				console.log(form_data);
+				$.ajax({
+                url: 'http://soouse.com/sesat/controller/form-pre-investigacion.php', 
+            	type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                success: function(data){
+				var dat = data.trim();
+				console.log(dat);
+					if(dat>"0"){
+						swal(
+						    'PreInforme enviado!',
+						    'Proceso Iniciado.',
+						    'success'
+						  )
+						$(".section-1").hide();
+						$(".inf").data("id",dat);
+						$(".section-2").show();
+					} else if(dat=="0"){
+						swal(
+						    'Error!',
+						    'Intente nuevamente.',
+						    'warning'
+						  )
+					}
+				}
+				});
+});
+
+$(".inf").click(function(){
+	var data = $(this).data("id");
+	location.href = "investigacion.html?id="+data;
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body { font-family: 'Open Sans', sans-serif;  }
+	.title-head {margin-top: 55px;}
+	.header-format {position: relative;padding: 10px;}
+	.logo-format {float: left;max-width: 110px}  .logo-format img {width: 100%}
+	.text-format-1 {    float: right;width: 60%;font-size: 14px;}
+	.text-format-2 {float: left;width: 100%;padding: 10px;font-size: 12px;background: #d2d2d2;margin-top: 10px;}
+	sublabel {font-size: 12px;padding: 0 10px;}
+	.titleh {background: #a23434;font-size: 20px;padding: 15px 10px;}
+	.titleh2 {background: #eb8f00;font-size: 20px;}
+	.boxadd {padding: 20px 10px;float: left;background: #909090;margin: 15px 0;}
+	.add-item { cursor: pointer;   float: left;width: 100%;background: #a23434;color: white;padding: 10px;text-align: center;border-bottom: 4px solid #751a19;}

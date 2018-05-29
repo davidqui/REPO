@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Morbilidad</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/jquery-ui.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/tipso.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/animate.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<style>
+	body { font-family: 'Open Sans', sans-serif;  }
+	.title-head {margin-top: 55px;}
+	.header-format {position: relative;padding: 10px;}
+	.logo-format {float: left;max-width: 110px}  .logo-format img {width: 100%}
+	.text-format-1 {    float: right;width: 60%;font-size: 14px;}
+	.text-format-2 {float: left;width: 100%;padding: 10px;font-size: 12px;background: #d2d2d2;margin-top: 10px;}
+	sublabel {font-size: 12px;padding: 0 10px;}
+	.titleh {background: #a23434;font-size: 20px;padding: 15px 10px;}
+	.titleh2 {background: #eb8f00;font-size: 20px;}
+	.boxadd {padding: 20px 10px;float: left;background: #909090;margin: 15px 0;}
+	.add-item { cursor: pointer;   float: left;width: 100%;background: #a23434;color: white;padding: 10px;text-align: center;border-bottom: 4px solid #751a19;}
+</style>
+<body>
+	<input type="hidden" val="0" class="position" name="position">
+
+	<div class="col-10 title-head">
+		<center>
+		<h1 class="card-title">MORBILIDAD</h1>
+		</center>
+	</div>
+
+	<div class="header-format">
+		<div class="divlogo clearfix">
+			<div class="logo-format"><img src="logo-ejercito.png" alt=""></div>
+			<div class="text-format-1">
+				MINISTERIO DE DEFENSA NACIONAL	<br>	
+				COMANDO GENERAL DE LAS FUERZAS MILITARES	<br>	
+				EJERCITO NACIONAL		<br>
+				COMANDO DE PERSONAL		<br>
+				SISTEMA DE GESTIÓN SST		<br>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="tool-box"><i class="fa fa-home" id="home">Inicio</i></div>
+<div class="section-1" style="display:block">
+
+	
+<div class="row clearfix texture">
+
+
+			<div class="next next1" data-pag="1">Datos de la Unidad</div>
+
+
+<form method="post" id="section-1">
+
+		<div class="row clearfix texture">
+
+
+			<div class="col-2"><label>Divisiòn:</label>
+				<span class="i-box">
+					<select class="srequire" name="divi" id="divi">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-2"><label>Brigada:</label>
+				<span class="i-box">
+					<select class="srequire" name="Brigada" id="Brigada">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-2"><label>Unidad:</label>
+				<span class="i-box">
+					<select class="srequire" name="unidad" id="unidad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-2"><label>Departamento:</label>
+				<span class="i-box">
+					<select class="srequire" name="Departamento" id="Departamento">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-2"><label>Municipio:</label>
+				<span class="i-box">
+					<select class="srequire" name="Municipio" id="Municipio">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="next next1" data-pag="1">Datos del profesional </div>
+
+
+			<div class="col-5"> <label>Nombres y Apellidos</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="Nombres_profe" name="Nombres_profe" value="" >
+				</span>
+			</div>
+
+			<div class="col-1"><label>Tipo de Identificaciòn:</label>
+				<span class="i-box">
+					<select class="srequire" name="tipcc_prof" id="tipcc_prof">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-3"> <label>Numero de identificaciòn</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="ident_profe" name="ident_profe" value="" >
+				</span>
+			</div>
+
+		<div class="col-3"><label>Especialidad:</label>
+				<span class="i-box">
+					<select class="srequire" name="Especialidad" id="Especialidad">
+						<option value="0">PSicologìa</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="next next1" data-pag="1">Datos del Consultante</div>
+
+
+			<div class="col-5"> <label>Nombres y Apellidos</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="Nombres_consul" name="Nombres_consul" value="" >
+				</span>
+			</div>
+
+			<div class="col-1"><label>Tipo de Identificaciòn:</label>
+				<span class="i-box">
+					<select class="srequire" name="ident_consul" id="ident_consul">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-3"> <label>Numero de identificaciòn</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="identi_consul" name="identi_consul" value="" >
+				</span>
+			</div>
+			<div class="col-3"><label>Tipo de Usuario:</label>
+				<span class="i-box">
+					<select class="srequire" name="tip_Consul" id="tip_Consul">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-2"><label>Grado:</label>
+				<span class="i-box">
+					<select class="srequire" name="Grado_consul" id="Grado_consul">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-3"><label>Unidad Militar:</label>
+				<span class="i-box">
+					<select class="srequire" name="unidad" id="unidad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-3"><label>Unidad de Medida Edad:</label>
+				<span class="i-box">
+					<select class="srequire" name="unidad_media" id="unidad_media">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-2"> <label>Edad</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="edad_consul" name="edad_consul" value="" >
+				</span>
+			</div>
+
+			<div class="col-2"><label>Sexo:</label>
+				<span class="i-box">
+					<select class="srequire" name="sexo_consul" id="tip_usuario">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-2"><label>Pertinencia Étnica:</label>
+				<span class="i-box">
+					<select class="srequire" name="etnica" id="etnica">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+						<div class="col-3"><label>Municipio de Residencia Habitual:</label>
+				<span class="i-box">
+					<select class="srequire" name="Municipio" id="Municipio">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-3"> <label>Dirección de Residencia</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="Residencia" name="Residencia" value="" >
+				</span>
+			</div>
+
+			<div class="col-3"> <label>N°de Contacto telefónico</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="telefono" name="telefono" value="" >
+				</span>
+			</div>
+
+
+
+			<div class="next next1" data-pag="1">Datos de la Consulta</div>
+
+			<div class="col-3"><label>Fecha de la consulta:</label>
+				<span class="i-box">
+                 <input type="date" name="Fecha" min="2018-01-01"><br>
+				</span>
+			</div>
+
+
+				<div class="col-3"><label>Servicio de Atención:</label>
+				<span class="i-box">
+					<select class="srequire" name="servicio_aten" id="servicio_aten">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+				<div class="col-3"><label>Cumplimiento:</label>
+				<span class="i-box">
+					<select class="srequire" name="Cumplimiento" id="Cumplimiento">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+				<div class="col-4"><label>Código CUPS de Consulta:</label>
+				<span class="i-box">
+					<select class="srequire" name="cups_codigo" id="cups_codigo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+				<div class="col-4"><label>Nombre CUPS de la Consulta:</label>
+				<span class="i-box">
+					<select class="srequire" name="nombre_cups" id="nombre_cups">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+				<div class="col-4"><label>Consulta Externa:</label>
+				<span class="i-box">
+					<select class="srequire" name="consul_exter" id="consul_exter">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+
+			<div class="col-4"><label>Código Diagnóstico Principal de la consulta CIE-10:</label>
+				<span class="i-box">
+					<select class="srequire" name="cod_CIE" id="cod_CIE">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-4"><label>Nombre Código Diagnóstico Principal:</label>
+				<span class="i-box">
+					<select class="srequire" name="cod_principal" id="cod_principal">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-4"><label>Código Diagnóstico Relacionado No. 1:</label>
+				<span class="i-box">
+					<select class="srequire" name="cod_diag1" id="cod_diag1">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-4"><label>Código Diagnóstico Relacionado No. 2:</label>
+				<span class="i-box">
+					<select class="srequire" name="cod_diag2" id="cod_diag2">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-4"><label>Código Diagnóstico Relacionado No. 3:</label>
+				<span class="i-box">
+					<select class="srequire" name="cod_diag3" id="cod_diag3">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+
+
+</form>
+</div>
+
+<script src="http://soouse.com/sesat/platform/js/jquery-1.12.0.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/jquery-ui.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/tipso.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/functions.js"></script>
+
+<link rel="stylesheet" href="include/sweetalert2/sweetalert2.min.css">
+<script src="include/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+	//GetId
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	var idMain = getParameterByName("id");
+	$(".position").val(idMain);
+	$(".reporteNo").html(idMain);
+	//Listas
+	$.ajax({
+		    url : 'http://soouse.com/sesat/controller/getListsData.php',
+		    data : {},
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		        console.log(json);
+		        createOptions(json);
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema al cargar las listas');
+		    }
+	});
+	function createOptions(json) {
+		$.each(json, function(i, item) {
+			for (var j = 0; j < json[i].id.length; j++) {
+				$("#"+i).append('<option value="'+json[i].id[j]+'">'+json[i].nameItem[j]+'</option>');
+			}
+		});
+	}
+	//Fecha actual
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var f = new Date();
+	$(".date-ini").val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+	//Dates
+	$( "#date-analisis" ).datepicker({ changeMonth: true, changeYear: true });
+	$( "#date-novedad" ).datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").change(function(){
+		var ed = calcular_edad($("#date-nacimiento").val());
+		$("#edad").html(ed+" Años");
+	});
+	//Checkbox function
+	$('input[type="checkbox"]').on('change', function() {
+	var pare = $(this).parent();
+	var paren = $(pare).parent();
+	var parent = $(paren).parent();
+	if(!$(parent).hasClass('multiple')){
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+	}
+	});
+
+
+//Form next
+$('.next').click(function(){
+	var pag = $(this).data('pag');
+	console.log("data:"+pag);
+	var errorst = 0;
+	var errorss = 0;
+    $(".section-"+pag+" .trequire").map(function(){
+        if( !$(this).val() ) { 
+        	$(this).addClass('warning'); errorst++;
+        } else if ($(this).val()) {
+        	$(this).removeClass('warning');
+        }   
+    });
+    $(".section-"+pag+" .srequire").map(function(){
+        if( $(this).val() == 0 ) { 
+        	$(this).addClass('warning'); errorss++;
+        } else if ($(this).val() != 0) {
+        	$(this).removeClass('warning');
+        }   
+    });
+	console.log("errors found text:"+errorst);
+	console.log("errors found select:"+errorss);
+
+    if(false){
+        alert("Hay un campo sin completar, verifique por favor.");
+    } else {
+    	var datanum = $(this).data("pag");
+    	if(datanum==9){
+			$(".boxadd").each(function(){
+				var formData = new FormData();
+				var position = $(".position").val();
+				var type = $(this).data("type");
+				var datas = $(this).serialize();
+				console.log(datas);
+				$.ajax({
+				    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+				    data : datas+'&type='+type+'&position='+position,
+				    type : 'POST',
+				    dataType : 'json',
+				    success : function(json) {
+				    	console.log(json)
+				        if(json.status>0){
+				        $(".section-"+pag).hide();
+				    	console.log(pag);
+				    	var pag_2 = pag+1;
+				    	console.log(pag_2);
+				    	$(".section-"+pag_2).fadeIn();
+				    	$('#up').click();
+				    	}
+				    },
+				    error : function(xhr, status) {
+				        alert('Disculpe, existió un problema');
+				    }
+				});
+
+			});
+		} else if(datanum==10){
+				var inputFile = document.getElementById("final-file");
+				var image = inputFile.files[0];
+				var form_data = new FormData();  
+				var position = $(".position").val();
+				form_data.append('position',position);  
+				form_data.append('file',image); 
+				console.log(form_data);
+				$.ajax({
+                url: 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php', 
+            	type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                success: function(data){
+				var dat = data.trim();
+				console.log(dat);
+					if(dat>"0"){
+						swal(
+						    'Firmas enviadas!',
+						    'Proceso Completo.',
+						    'success'
+						  )
+						location.href = "../home/home.html";
+					} else if(dat=="0"){
+						swal(
+						    'Error!',
+						    'Intente nuevamente.',
+						    'warning'
+						  )
+					}
+				}
+				});
+		} else {
+		var data = $("#section-"+datanum).serialize();
+		console.log(data);
+		$.ajax({
+		    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+		    data : data,
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		    	console.log(json)
+		        if(json.status>0){
+		        $(".section-"+pag).hide();
+		    	console.log(pag);
+		    	var pag_2 = pag+1;
+		    	console.log(pag_2);
+		    	$(".section-"+pag_2).fadeIn();
+		    	$('#up').click();
+		    	}
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema');
+		    }
+		});
+		}
+    }
+});
+
+$('.dinamico input[type="checkbox"]').on('change', function() {
+if (this.checked && $(this).hasClass('depende')) {
+	$(".opcional").fadeIn();
+} else {
+	$('.opcional').fadeOut();
+}
+});
+
+$("#novedad-interna-fuerza").change(function(){
+	if($(this).val()!=1){
+		$("#section-5").hide();
+	}
+})
+
+$(".plan").click(function(){
+	var box = $(this).data("box");
+	$(".box"+box).append('<form class="boxadd" data-type="'+box+'" method="post"><div class="col-5"><label>10.1.1 Acciones preventivas y/o correctivas</label><span class="i-box"><input type="text" class="require" id="plan-accion-prev" name="plan-accion-prev" placeholder="" ></span></div><div class="col-5"><label>10.1.2 Responsable de la ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-res" name="plan-accion-res" placeholder="" ></span></div><div class="col-5"><label>10.1.3 Fecha de ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-exe" name="plan-accion-date-exe" placeholder="" ></span></div><div class="col-5"><label>10.1.4 Recursos</label><span class="i-box"><input type="text" class="require" id="plan-accion-recursos" name="plan-accion-recursos" placeholder="" ></span></div><div class="col-5"><label>10.1.5 Responsable de hacer cumplir la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-res-cumplir" name="plan-accion-res-cumplir" placeholder="" ></span></div><div class="col-5"><label>10.1.6 Fecha de verificación de cierre de la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-close" name="plan-accion-date-close" value="Fecha Ajustada por Directivas" disabled></span></div></form>');
+
+})
+
+$("#home").click(function(){
+	location.href = "../home/home.html";
+});
+</script>
+</body>
+</html>

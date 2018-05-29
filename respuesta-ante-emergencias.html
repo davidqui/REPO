@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PREVENCION EMERGENCIAS</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/jquery-ui.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/tipso.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/animate.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/formato.css">
+
+<body>
+	<input type="hidden" val="0" class="position" name="position">
+
+	<div class="col-10 title-head">
+		<h1 class="card-title">PREVENCION, PREPARACION Y RESPUESTAS ANTE EMERGENCIAS </h1>
+	</div>
+
+	<div class="header-format">
+		<div class="divlogo clearfix">
+			<div class="logo-format"><img src="logo-ejercito.png" alt=""></div>
+			<div class="text-format-1">
+				MINISTERIO DE DEFENSA NACIONAL	<br>	
+				COMANDO GENERAL DE LAS FUERZAS MILITARES	<br>	
+				EJERCITO NACIONAL		<br>
+				COMANDO DE PERSONAL		<br>
+				SISTEMA DE GESTIÓN SST		<br>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="tool-box"><i class="fa fa-home" id="home"> Inicio</i></div>
+
+
+
+<div class="section-1" style="display:block">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+
+
+<form method="post" id="section-1">
+
+		<div class="row clearfix texture">
+	
+		<div class="col-5"> <label>Fecha </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="fechaEmer" name="fechaEmer" value="" >				</span>
+			</div>
+		<div class="col-5"> <label>Hora</label>
+				<span class="i-box">
+					<div class="col-5" style="width: 50%"> <sublabel>Hora</sublabel>
+						<span class="i-box">
+						<select class="srequire" name="HoraEmer" id="HoraEmer">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						</span>
+					</div>
+					<div class="col-5" style="width: 50%"> <sublabel>Minuto</sublabel>
+						<span class="i-box">
+						<select class="srequire" name="MinEmer" id="MinEmer">
+							<option value="0">00</option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+							<option value="45">45</option>
+							<option value="46">46</option>
+							<option value="47">47</option>
+							<option value="48">48</option>
+							<option value="49">49</option>
+							<option value="50">50</option>
+							<option value="51">51</option>
+							<option value="52">52</option>
+							<option value="53">53</option>
+							<option value="54">54</option>
+							<option value="55">55</option>
+							<option value="56">56</option>
+							<option value="57">57</option>
+							<option value="58">58</option>
+							<option value="59">59</option>
+						</select>
+						</span>
+					</div>
+				</span>
+			</div>
+			<div class="col-3"><label>Jefatura de estado mayor:</label>
+				<span class="i-box">
+					<select class="srequire" name="Jem" id="Jem">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>División:</label>
+				<span class="i-box">
+					<select class="srequire" name="Div" id="Div">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Comando:</label>
+				<span class="i-box">
+					<select class="srequire" name="Comando" id="Comando">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Fuerza de Tarea:</label>
+				<span class="i-box">
+					<select class="srequire" name="FuerzaTarea" id="FuerzaTarea">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>CEDE :</label>
+				<span class="i-box">
+					<select class="srequire" name="Cede" id="Cede">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Brigada/Dirección/Regimiento:</label>
+				<span class="i-box">
+					<select class="srequire" name="Br" id="Br">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Unidad:</label>
+				<span class="i-box">
+					<select class="srequire" name="Unidad" id="Unidad">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"><label>Tipo de simulacro:</label>
+				<span class="i-box">
+					<select class="srequire" name="SimulaEmer" id="SimulaEmer">
+						<option value="0">Selecciona</option>
+					</select></span></div>
+			<div class="col-3"> <label>Duración </label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="DuracionEmer" name="DuracionEmer" value="" >
+				</span>
+			</div>
+			<div class="col-full"> 
+				<span class="i-box">
+					<input type="text" class="trequire" id="DescripEmer" name="DescripEmer" value="" placeholder="Descripción del Simulacro">
+				</span>
+			</div>
+			<div class="col-3"> 
+				<span class="i-box"><label>Adjunta Imagen </label>
+					<input type="file" class="trequire" id="img1Emer" name="img1Emer" accept="image/png, .jpg , .gif">
+				</span></div>
+			<div class="col-3"> 
+				<span class="i-box"><label>Adjunta Imagen </label>
+					<input type="file" class="trequire" id="img2Emer" name="img2Emer" accept="image/png, .jpg , .gif">
+				</span></div>
+		
+
+
+
+
+		
+
+
+
+		<div class="next next1" data-pag="1">Siguiente Módulo</div>
+		</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+
+
+<script src="http://soouse.com/sesat/platform/js/jquery-1.12.0.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/jquery-ui.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/tipso.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/functions.js"></script>
+
+<link rel="stylesheet" href="include/sweetalert2/sweetalert2.min.css">
+<script src="include/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+	//GetId
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	var idMain = getParameterByName("id");
+	$(".position").val(idMain);
+	$(".reporteNo").html(idMain);
+	//Listas
+	$.ajax({
+		    url : 'http://soouse.com/sesat/controller/getListsData.php',
+		    data : {},
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		        console.log(json);
+		        createOptions(json);
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema al cargar las listas');
+		    }
+	});
+	function createOptions(json) {
+		$.each(json, function(i, item) {
+			for (var j = 0; j < json[i].id.length; j++) {
+				$("#"+i).append('<option value="'+json[i].id[j]+'">'+json[i].nameItem[j]+'</option>');
+			}
+		});
+	}
+	//Fecha actual
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var f = new Date();
+
+
+
+	$(".date-ini").val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+	//Dates
+
+	$( "#dateIniInv" ).datepicker({ changeMonth: true, changeYear: true });
+
+	$( "#date-novedad" ).datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").change(function(){
+		var ed = calcular_edad($("#date-nacimiento").val());
+		$("#edad").html(ed+" Años");
+	});
+	//Checkbox function
+	$('input[type="checkbox"]').on('change', function() {
+	var pare = $(this).parent();
+	var paren = $(pare).parent();
+	var parent = $(paren).parent();
+	if(!$(parent).hasClass('multiple')){
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+	}
+	});
+
+
+//Form next
+$('.next').click(function(){
+	var pag = $(this).data('pag');
+	console.log("data:"+pag);
+	var errorst = 0;
+	var errorss = 0;
+    $(".section-"+pag+" .trequire").map(function(){
+        if( !$(this).val() ) { 
+        	$(this).addClass('warning'); errorst++;
+        } else if ($(this).val()) {
+        	$(this).removeClass('warning');
+        }   
+    });
+    $(".section-"+pag+" .srequire").map(function(){
+        if( $(this).val() == 0 ) { 
+        	$(this).addClass('warning'); errorss++;
+        } else if ($(this).val() != 0) {
+        	$(this).removeClass('warning');
+        }   
+    });
+	console.log("errors found text:"+errorst);
+	console.log("errors found select:"+errorss);
+
+    if(false){
+        alert("Hay un campo sin completar, verifique por favor.");
+    } else {
+    	var datanum = $(this).data("pag");
+    	if(datanum==9){
+			$(".boxadd").each(function(){
+				var formData = new FormData();
+				var position = $(".position").val();
+				var type = $(this).data("type");
+				var datas = $(this).serialize();
+				console.log(datas);
+				$.ajax({
+				    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+				    data : datas+'&type='+type+'&position='+position,
+				    type : 'POST',
+				    dataType : 'json',
+				    success : function(json) {
+				    	console.log(json)
+				        if(json.status>0){
+				        $(".section-"+pag).hide();
+				    	console.log(pag);
+				    	var pag_2 = pag+1;
+				    	console.log(pag_2);
+				    	$(".section-"+pag_2).fadeIn();
+				    	$('#up').click();
+				    	}
+				    },
+				    error : function(xhr, status) {
+				        alert('Disculpe, existió un problema');
+				    }
+				});
+
+			});
+		} else if(datanum==10){
+				var inputFile = document.getElementById("final-file");
+				var image = inputFile.files[0];
+				var form_data = new FormData();  
+				var position = $(".position").val();
+				form_data.append('position',position);  
+				form_data.append('file',image); 
+				console.log(form_data);
+				$.ajax({
+                url: 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php', 
+            	type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                success: function(data){
+				var dat = data.trim();
+				console.log(dat);
+					if(dat>"0"){
+						swal(
+						    'Firmas enviadas!',
+						    'Proceso Completo.',
+						    'success'
+						  )
+						location.href = "../home/home.html";
+					} else if(dat=="0"){
+						swal(
+						    'Error!',
+						    'Intente nuevamente.',
+						    'warning'
+						  )
+					}
+				}
+				});
+		} else {
+		var data = $("#section-"+datanum).serialize();
+		console.log(data);
+		$.ajax({
+		    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+		    data : data,
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		    	console.log(json)
+		        if(json.status>0){
+		        $(".section-"+pag).hide();
+		    	console.log(pag);
+		    	var pag_2 = pag+1;
+		    	console.log(pag_2);
+		    	$(".section-"+pag_2).fadeIn();
+		    	$('#up').click();
+		    	}
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema');
+		    }
+		});
+		}
+    }
+});
+
+$('.dinamico input[type="checkbox"]').on('change', function() {
+if (this.checked && $(this).hasClass('depende')) {
+	$(".opcional").fadeIn();
+} else {
+	$('.opcional').fadeOut();
+}
+});
+
+$("#novedad-interna-fuerza").change(function(){
+	if($(this).val()!=1){
+		$("#section-5").hide();
+	}
+})
+
+$(".plan").click(function(){
+	var box = $(this).data("box");
+	$(".box"+box).append('<form class="boxadd" data-type="'+box+'" method="post"><div class="col-5"><label>10.1.1 Acciones preventivas y/o correctivas</label><span class="i-box"><input type="text" class="require" id="plan-accion-prev" name="plan-accion-prev" placeholder="" ></span></div><div class="col-5"><label>10.1.2 Responsable de la ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-res" name="plan-accion-res" placeholder="" ></span></div><div class="col-5"><label>10.1.3 Fecha de ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-exe" name="plan-accion-date-exe" placeholder="" ></span></div><div class="col-5"><label>10.1.4 Recursos</label><span class="i-box"><input type="text" class="require" id="plan-accion-recursos" name="plan-accion-recursos" placeholder="" ></span></div><div class="col-5"><label>10.1.5 Responsable de hacer cumplir la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-res-cumplir" name="plan-accion-res-cumplir" placeholder="" ></span></div><div class="col-5"><label>10.1.6 Fecha de verificación de cierre de la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-close" name="plan-accion-date-close" value="Fecha Ajustada por Directivas" disabled></span></div></form>');
+
+})
+
+$("#home").click(function(){
+	location.href = "../home/home.html";
+});
+</script>
+</body>
+</html>

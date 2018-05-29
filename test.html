@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SESAT | Administración</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/jquery-ui.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/tipso.min.css">
+<link rel="stylesheet" href="http://soouse.com/sesat/platform/css/animate.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<style>
+	body { font-family: 'Open Sans', sans-serif;  }
+	.title-head {margin-top: 55px;}
+	.header-format {position: relative;padding: 10px;}
+	.logo-format {float: left;max-width: 110px}  .logo-format img {width: 100%}
+	.text-format-1 {    float: right;width: 60%;font-size: 14px;}
+	.text-format-2 {float: left;width: 100%;padding: 10px;font-size: 12px;background: #d2d2d2;margin-top: 10px;}
+	sublabel {font-size: 12px;padding: 0 10px;}
+	.titleh {background: #a23434;font-size: 20px;padding: 15px 10px;}
+	.titleh2 {background: #eb8f00;font-size: 20px;}
+	.boxadd {padding: 20px 10px;float: left;background: #909090;margin: 15px 0;}
+	.add-item { cursor: pointer;   float: left;width: 100%;background: #a23434;color: white;padding: 10px;text-align: center;border-bottom: 4px solid #751a19;}
+</style>
+<body>
+	<input type="hidden" val="0" class="position" name="position">
+
+	<div class="col-10 title-head">
+		<h1 class="card-title">FORMATO DE INVESTIGACIÓN TECNICA DE ACCIDENTES, INCIDENTES Y OTROS EVENTOS</h1>
+	</div>
+
+	<div class="header-format">
+		<div class="divlogo clearfix">
+			<div class="logo-format"><img src="logo-ejercito.png" alt=""></div>
+			<div class="text-format-1">
+				MINISTERIO DE DEFENSA NACIONAL	<br>	
+				COMANDO GENERAL DE LAS FUERZAS MILITARES	<br>	
+				EJERCITO NACIONAL		<br>
+				COMANDO DE PERSONAL		<br>
+				SISTEMA DE GESTIÓN SST		<br>
+			</div>
+			<div class="text-format-2">
+				Código: FO-COPER-DIPSE-468	 <br>
+				Versión: 1 <br>
+				Fecha de emisión: 2016-12-13 <br>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tool-box"><i class="fa fa-home" id="home"> Inicio</i></div>
+
+
+
+<div class="section-1" style="display:block">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+
+<div class="title-row titleh">1.Información de la novedad</div>
+
+<form method="post" id="section-1">
+
+		<div class="row clearfix texture">
+
+			<div class="col-100"> <label>1.1 Nombres</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitins" name="nitins" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.2 NIT Contratista</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitcon" name="nitcon" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.2 NIT Contratista 2</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitcon" name="nitcon" value="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>1.2 NIT Contratista 3</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitcon" name="nitcon" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.2 NIT Contratista 4</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitcon" name="nitcon" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.2 NIT Contratista 5</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitcon" name="nitcon" value="" >
+				</span>
+			</div>
+
+
+
+			<div class="line"></div>
+			<div class="title-row"> 1.4 Unidad</div>
+
+			<div class="col-5"><label>Jefatura de Estado Mayor:</label>
+				<span class="i-box">
+					<select class="srequire" name="jefaEstMayor" id="jefaEstMayor">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>Unidad Táctica:</label>
+				<span class="i-box">
+					<select class="srequire" name="uniTac" id="uniTac">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>División o Comando:</label>
+				<span class="i-box">
+					<select class="srequire" name="divcoman" id="divcoman">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>Fuerza de Tarea:</label>
+				<span class="i-box">
+					<select class="srequire" name="fuerzaTarea" id="fuerzaTarea">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>Brigada o Dirección:</label>
+				<span class="i-box">
+					<select class="srequire" name="brigadaDireccion" id="brigadaDireccion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>CEDE:</label>
+				<span class="i-box">
+					<select class="srequire" name="cede" id="cede">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="line"></div>
+
+			<div class="title-row">1.5 Fecha de la novedad:</div>
+
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="date-novedad" name="date-novedad" value="" >				</span>
+			</div>
+
+			<div class="col-5"> <label>Hora</label>
+				<span class="i-box">
+					<div class="col-5" style="width: 50%"> <sublabel>Hora</sublabel>
+						<span class="i-box">
+						<select class="srequire" name="hora-novedad" id="hora-novedad">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						</span>
+					</div>
+					<div class="col-5" style="width: 50%"> <sublabel>Minuto</sublabel>
+						<span class="i-box">
+						<select class="srequire" name="min-novedad" id="min-novedad">
+							<option value="0">00</option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+							<option value="45">45</option>
+							<option value="46">46</option>
+							<option value="47">47</option>
+							<option value="48">48</option>
+							<option value="49">49</option>
+							<option value="50">50</option>
+							<option value="51">51</option>
+							<option value="52">52</option>
+							<option value="53">53</option>
+							<option value="54">54</option>
+							<option value="55">55</option>
+							<option value="56">56</option>
+							<option value="57">57</option>
+							<option value="58">58</option>
+							<option value="59">59</option>
+						</select>
+						</span>
+					</div>
+				</span>
+			</div>
+
+			<div class="title-row">1.6 Fecha del análisis novedad:</div>
+
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="date-analisis" name="date-analisis" value="" >
+				</span>
+			</div>
+
+			<div class="title-row">1.7 Lugar de la novedad:	</div>
+
+			<div class="col-5"><label>Zona:</label>
+				<span class="i-box">
+					<select class="srequire" name="zona-novedad" id="zona-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>Coordenadas - Dirección</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="coor-direccion" name="coor-direccion" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"><label>Pais:</label>
+				<span class="i-box">
+					<select class="srequire" name="pais-novedad" id="pais-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Departamento:</label>
+				<span class="i-box">
+					<select class="srequire" name="dep-novedad" id="dep-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Ciudad:</label>
+				<span class="i-box">
+					<select class="srequire" name="ciudad-novedad" id="ciudad-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.8 Características del lugar:</div>
+
+			<div class="col-5"><label>Lugar</label>
+				<span class="i-box">
+					<select class="srequire" name="carac-lugar" id="carac-lugar">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <sublabel>Sitio especifico:</sublabel>
+				<span class="i-box">
+					<input type="text" class="" id="sitio-especifico" name="sitio-especifico" value="" >
+				</span>
+			</div>
+
+			<div class="title-row">1.9 Clase de novedad:</div>
+
+			<div class="col-5"><label>Novedad</label>
+				<span class="i-box">
+					<select class="srequire" name="clase-novedad" id="clase-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">Novedad Interna de la Fuerza</div>
+
+			<div class="col-5"><label>1.9.1 Tipo de novedad interna de la fuerza</label>
+				<span class="i-box">
+					<select class="srequire" name="novedad-interna-fuerza" id="novedad-interna-fuerza">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.9.2 Novedad Subsección</label>
+				<span class="i-box">
+					<select class="srequire" name="novedad-interna-fuerza-sub" id="novedad-interna-fuerza-sub">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.10 Gravedad del accidente:</div>
+
+			<div class="col-5"><label>Gravedad</label>
+				<span class="i-box">
+					<select class="srequire" name="gravedad" id="gravedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.11 Parte del cuerpo afectada:</div>
+
+			<div class="col-5"><label>Parte</label>
+				<span class="i-box">
+					<select class="srequire" name="parte-cuerpo" id="parte-cuerpo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.11.1 Descripción</label>
+				<span class="i-box">
+					<select class="srequire" name="parte-cuerpo-des" id="parte-cuerpo-des">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.12 Atención inmediata que se dio al evento</div>
+
+			<div class="col-5"><label>Tipo</label>
+				<span class="i-box">
+					<select class="srequire" name="atencion-inmediata" id="atencion-inmediata">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.13 ¿A quien fue informado al interior de la institución?</div>
+
+			<div class="col-5"><label>1.13.1 Grado:</label>
+				<span class="i-box">
+					<select class="srequire" name="info-grado" id="info-grado">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.13.2 Cargo:</label>
+				<span class="i-box">
+					<select class="srequire" name="info-cargo" id="info-cargo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.13.3 Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="info-name" name="info-name" placeholder="Nombre" >
+				</span>
+			</div>
+
+			<div class="title-row">1.14 ¿A quien fue informado fuera de la institución?</div>
+
+			<div class="col-5"><label>1.14.1 Consanguinidad/relación:</label>
+				<span class="i-box">
+					<select class="srequire" name="info-ext-relacion" id="info-ext-relacion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.14.2 Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="info-ext-name" name="info-ext-name" placeholder="Nombre" >
+				</span>
+			</div>
+
+			<div class="title-row">1.15 Grupo Agente o fuente que produce la lesión:</div>
+			
+			<div class="col-5"><label>Fuente</label>
+				<span class="i-box">
+					<select class="srequire" name="fuente-agente" id="fuente-agente">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.15.1 Agente especifico</label>
+				<span class="i-box">
+					<select class="srequire" name="agente" id="agente">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.15.2 Otro cuál:</label>
+				<span class="i-box">
+					<input type="text" class="" id="otro-agente" name="otro-agente" placeholder="Otro" >
+				</span>
+			</div>
+
+			<div class="title-row">1.16 Mecanismo de la lesión:</div>
+
+			<div class="col-5"><label>Mecanismo</label>
+				<span class="i-box">
+					<select class="srequire" name="meca-lesion" id="meca-lesion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.17 Nombre de la persona que reporta la novedad:</div>
+
+			<div class="col-5"> <label>Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nombre-reporta" name="nombre-reporta" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">1.18 Grado de quien reporta la novedad:	</div>
+
+			<div class="col-5"> <label>Grado:</label>
+				<span class="i-box">
+					<select class="srequire" name="grado-reporta" id="grado-reporta">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.19 Cargo de quien reporta la novedad:</div>
+
+			<div class="col-5"> <label>Cargo:</label>
+				<span class="i-box">
+					<select class="srequire" name="cargo-reporta" id="cargo-reporta">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="line"></div>
+			
+		<div class="next next1" data-pag="1">Siguiente Módulo</div>
+		</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+
+
+<script src="http://soouse.com/sesat/platform/js/jquery-1.12.0.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/jquery-ui.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/tipso.min.js"></script>
+<script src="http://soouse.com/sesat/platform/js/functions.js"></script>
+
+<link rel="stylesheet" href="include/sweetalert2/sweetalert2.min.css">
+<script src="include/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+	//GetId
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	var idMain = getParameterByName("id");
+	$(".position").val(idMain);
+	$(".reporteNo").html(idMain);
+	//Listas
+	$.ajax({
+		    url : 'http://soouse.com/sesat/controller/getListsData.php',
+		    data : {},
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		        console.log(json);
+		        createOptions(json);
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema al cargar las listas');
+		    }
+	});
+	function createOptions(json) {
+		$.each(json, function(i, item) {
+			for (var j = 0; j < json[i].id.length; j++) {
+				$("#"+i).append('<option value="'+json[i].id[j]+'">'+json[i].nameItem[j]+'</option>');
+			}
+		});
+	}
+	//Fecha actual
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var f = new Date();
+	$(".date-ini").val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+	//Dates
+	$( "#date-analisis" ).datepicker({ changeMonth: true, changeYear: true });
+	$( "#date-novedad" ).datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").change(function(){
+		var ed = calcular_edad($("#date-nacimiento").val());
+		$("#edad").html(ed+" Años");
+	});
+	//Checkbox function
+	$('input[type="checkbox"]').on('change', function() {
+	var pare = $(this).parent();
+	var paren = $(pare).parent();
+	var parent = $(paren).parent();
+	if(!$(parent).hasClass('multiple')){
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+	}
+	});
+
+
+//Form next
+$('.next').click(function(){
+	var pag = $(this).data('pag');
+	console.log("data:"+pag);
+	var errorst = 0;
+	var errorss = 0;
+    $(".section-"+pag+" .trequire").map(function(){
+        if( !$(this).val() ) { 
+        	$(this).addClass('warning'); errorst++;
+        } else if ($(this).val()) {
+        	$(this).removeClass('warning');
+        }   
+    });
+    $(".section-"+pag+" .srequire").map(function(){
+        if( $(this).val() == 0 ) { 
+        	$(this).addClass('warning'); errorss++;
+        } else if ($(this).val() != 0) {
+        	$(this).removeClass('warning');
+        }   
+    });
+	console.log("errors found text:"+errorst);
+	console.log("errors found select:"+errorss);
+
+    if(false){
+        alert("Hay un campo sin completar, verifique por favor.");
+    } else {
+    	var datanum = $(this).data("pag");
+    	if(datanum==9){
+			$(".boxadd").each(function(){
+				var formData = new FormData();
+				var position = $(".position").val();
+				var type = $(this).data("type");
+				var datas = $(this).serialize();
+				console.log(datas);
+				$.ajax({
+				    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+				    data : datas+'&type='+type+'&position='+position,
+				    type : 'POST',
+				    dataType : 'json',
+				    success : function(json) {
+				    	console.log(json)
+				        if(json.status>0){
+				        $(".section-"+pag).hide();
+				    	console.log(pag);
+				    	var pag_2 = pag+1;
+				    	console.log(pag_2);
+				    	$(".section-"+pag_2).fadeIn();
+				    	$('#up').click();
+				    	}
+				    },
+				    error : function(xhr, status) {
+				        alert('Disculpe, existió un problema');
+				    }
+				});
+
+			});
+		} else if(datanum==10){
+				var inputFile = document.getElementById("final-file");
+				var image = inputFile.files[0];
+				var form_data = new FormData();  
+				var position = $(".position").val();
+				form_data.append('position',position);  
+				form_data.append('file',image); 
+				console.log(form_data);
+				$.ajax({
+                url: 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php', 
+            	type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                success: function(data){
+				var dat = data.trim();
+				console.log(dat);
+					if(dat>"0"){
+						swal(
+						    'Firmas enviadas!',
+						    'Proceso Completo.',
+						    'success'
+						  )
+						location.href = "../home/home.html";
+					} else if(dat=="0"){
+						swal(
+						    'Error!',
+						    'Intente nuevamente.',
+						    'warning'
+						  )
+					}
+				}
+				});
+		} else {
+		var data = $("#section-"+datanum).serialize();
+		console.log(data);
+		$.ajax({
+		    url : 'http://soouse.com/sesat/controller/form-'+datanum+'-investigacion.php',
+		    data : data,
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		    	console.log(json)
+		        if(json.status>0){
+		        $(".section-"+pag).hide();
+		    	console.log(pag);
+		    	var pag_2 = pag+1;
+		    	console.log(pag_2);
+		    	$(".section-"+pag_2).fadeIn();
+		    	$('#up').click();
+		    	}
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema');
+		    }
+		});
+		}
+    }
+});
+
+$('.dinamico input[type="checkbox"]').on('change', function() {
+if (this.checked && $(this).hasClass('depende')) {
+	$(".opcional").fadeIn();
+} else {
+	$('.opcional').fadeOut();
+}
+});
+
+$("#novedad-interna-fuerza").change(function(){
+	if($(this).val()!=1){
+		$("#section-5").hide();
+	}
+})
+
+$(".plan").click(function(){
+	var box = $(this).data("box");
+	$(".box"+box).append('<form class="boxadd" data-type="'+box+'" method="post"><div class="col-5"><label>10.1.1 Acciones preventivas y/o correctivas</label><span class="i-box"><input type="text" class="require" id="plan-accion-prev" name="plan-accion-prev" placeholder="" ></span></div><div class="col-5"><label>10.1.2 Responsable de la ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-res" name="plan-accion-res" placeholder="" ></span></div><div class="col-5"><label>10.1.3 Fecha de ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-exe" name="plan-accion-date-exe" placeholder="" ></span></div><div class="col-5"><label>10.1.4 Recursos</label><span class="i-box"><input type="text" class="require" id="plan-accion-recursos" name="plan-accion-recursos" placeholder="" ></span></div><div class="col-5"><label>10.1.5 Responsable de hacer cumplir la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-res-cumplir" name="plan-accion-res-cumplir" placeholder="" ></span></div><div class="col-5"><label>10.1.6 Fecha de verificación de cierre de la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-close" name="plan-accion-date-close" value="Fecha Ajustada por Directivas" disabled></span></div></form>');
+
+})
+
+$("#home").click(function(){
+	location.href = "../home/home.html";
+});
+</script>
+</body>
+</html>

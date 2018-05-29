@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INVESTIGACION</title>
+
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/css/font-awesome.css">
+<link rel="stylesheet" href="http://soouse.com/sipre/platform/css/jquery-ui.min.css">
+<link rel="stylesheet" href="http://soouse.com/sipre/platform/css/tipso.min.css">
+<link rel="stylesheet" href="http://soouse.com/sipre/platform/css/animate.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<style>
+	body { font-family: 'Open Sans', sans-serif;  }
+	.title-head {margin-top: 55px;}
+	.header-format {position: relative;padding: 10px;}
+	.logo-format {float: left;max-width: 110px}  .logo-format img {width: 100%}
+	.text-format-1 {    float: right;width: 60%;font-size: 14px;}
+	.text-format-2 {float: left;width: 100%;padding: 10px;font-size: 12px;background: #d2d2d2;margin-top: 10px;}
+	sublabel {font-size: 12px;padding: 0 10px;}
+	.titleh {background: #a23434;font-size: 20px;padding: 15px 10px;}
+	.titleh2 {background: #eb8f00;font-size: 20px;}
+	.boxadd {padding: 20px 10px;float: left;background: #909090;margin: 15px 0;}
+	.add-item { cursor: pointer;   float: left;width: 100%;background: #a23434;color: white;padding: 10px;text-align: center;border-bottom: 4px solid #751a19;}
+</style>
+<body>
+	<input type="hidden" val="0" class="position" name="position">
+
+	<div class="col-10 title-head">
+		<h1 class="card-title">FORMATO DE INVESTIGACIÓN TECNICA DE ACCIDENTES, INCIDENTES Y OTROS EVENTOS</h1>
+	</div>
+
+	<div class="header-format">
+		<div class="divlogo clearfix">
+			<div class="logo-format"><img src="logo-ejercito.png" alt=""></div>
+			<div class="text-format-1">
+				MINISTERIO DE DEFENSA NACIONAL	<br>	
+				COMANDO GENERAL DE LAS FUERZAS MILITARES	<br>	
+				EJERCITO NACIONAL		<br>
+				COMANDO DE PERSONAL		<br>
+				SISTEMA DE GESTIÓN SST		<br>
+			</div>
+			<div class="text-format-2">
+				Código: FO-COPER-DIPSE-468	 <br>
+				Versión: 1 <br>
+				Fecha de emisión: 2016-12-13 <br>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tool-box"><i class="fa fa-home" id="home"> Inicio</i></div>
+
+
+
+<div class="section-1" style="display:block">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style="">
+			<input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+
+<div class="title-row titleh">1.Información de la novedad</div>
+
+<form method="post" id="section-1">
+
+		<div class="row clearfix texture">
+
+			<div class="col-5"> <label>1.1 NIT Institución</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitins" name="nitins" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.2 NIT Contratista</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitcon" name="nitcon" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.1 NIT subInstitución</label>
+				<span class="i-box">
+					<input type="num" class="trequire" id="nitins" name="nitins" value="" >
+				</span>
+			</div>
+
+			<div class="line"></div>
+			<div class="title-row"> 1.4 Unidad</div>
+			<div class="col-5"><label>Jefatura de Estado Mayor:</label>
+				<span class="i-box">
+					<select class="srequire" name="jefaEstMayor" id="jefaEstMayor">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>Unidad Táctica:</label>
+				<span class="i-box">
+					<select class="srequire" name="uniTac" id="uniTac">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>División o Comando:</label>
+				<span class="i-box">
+					<select class="srequire" name="divcoman" id="divcoman">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>Fuerza de Tarea:</label>
+				<span class="i-box">
+					<select class="srequire" name="fuerzaTarea" id="fuerzaTarea">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>Brigada o Dirección:</label>
+				<span class="i-box">
+					<select class="srequire" name="brigadaDireccion" id="brigadaDireccion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"><label>CEDE:</label>
+				<span class="i-box">
+					<select class="srequire" name="cede" id="cede">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="line"></div>
+
+			<div class="title-row">1.5 Fecha de la novedad:</div>
+
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="date-novedad" name="date-novedad" value="" >				</span>
+			</div>
+
+			<div class="col-5"> <label>Hora</label>
+				<span class="i-box">
+					<div class="col-5" style="width: 50%"> <sublabel>Hora</sublabel>
+						<span class="i-box">
+						<select class="srequire" name="hora-novedad" id="hora-novedad">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						</span>
+					</div>
+					<div class="col-5" style="width: 50%"> <sublabel>Minuto</sublabel>
+						<span class="i-box">
+						<select class="srequire" name="min-novedad" id="min-novedad">
+							<option value="0">00</option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+							<option value="45">45</option>
+							<option value="46">46</option>
+							<option value="47">47</option>
+							<option value="48">48</option>
+							<option value="49">49</option>
+							<option value="50">50</option>
+							<option value="51">51</option>
+							<option value="52">52</option>
+							<option value="53">53</option>
+							<option value="54">54</option>
+							<option value="55">55</option>
+							<option value="56">56</option>
+							<option value="57">57</option>
+							<option value="58">58</option>
+							<option value="59">59</option>
+						</select>
+						</span>
+					</div>
+				</span>
+			</div>
+
+			<div class="title-row">1.6 Fecha del análisis novedad:</div>
+
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="date-analisis" name="date-analisis" value="" >
+				</span>
+			</div>
+
+			<div class="title-row">1.7 Lugar de la novedad:	</div>
+
+			<div class="col-5"><label>Zona:</label>
+				<span class="i-box">
+					<select class="srequire" name="zona" id="zona-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>Coordenadas - Dirección</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="coor-direccion" name="coor-direccion" value="" >
+				</span>
+			</div>
+
+			<div class="col-5"><label>Pais:</label>
+				<span class="i-box">
+					<select class="srequire" name="pais" id="pais">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Departamento:</label>
+				<span class="i-box">
+					<select class="srequire" name="dep-novedad" id="dep-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Ciudad:</label>
+				<span class="i-box">
+					<select class="srequire" name="ciudad-novedad" id="ciudad-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.8 Características del lugar:</div>
+
+			<div class="col-5"><label>Lugar</label>
+				<span class="i-box">
+					<select class="srequire" name="carac-lugar" id="carac-lugar">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <sublabel>Sitio especifico:</sublabel>
+				<span class="i-box">
+					<input type="text" class="" id="sitio-especifico" name="sitio-especifico" value="" >
+				</span>
+			</div>
+
+			<div class="title-row">1.9 Clase de novedad:</div>
+
+			<div class="col-5"><label>Novedad</label>
+				<span class="i-box">
+					<select class="srequire" name="clase-novedad" id="clase-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">Novedad Interna de la Fuerza</div>
+
+			<div class="col-5"><label>1.9.1 Tipo de novedad interna de la fuerza</label>
+				<span class="i-box">
+					<select class="srequire" name="novedad-interna-fuerza" id="novedad-interna-fuerza">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.9.2 Novedad Subsección</label>
+				<span class="i-box">
+					<select class="srequire" name="novedad-interna-fuerza-sub" id="novedad-interna-fuerza-sub">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.10 Gravedad del accidente:</div>
+
+			<div class="col-5"><label>Gravedad</label>
+				<span class="i-box">
+					<select class="srequire" name="gravedad" id="gravedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.11 Parte del cuerpo afectada:</div>
+
+			<div class="col-5"><label>Parte</label>
+				<span class="i-box">
+					<select class="srequire" name="parte-cuerpo" id="parte-cuerpo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.11.1 Descripción</label>
+				<span class="i-box">
+					<select class="srequire" name="parte-cuerpo-des" id="parte-cuerpo-des">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.12 Atención inmediata que se dio al evento</div>
+
+			<div class="col-5"><label>Tipo</label>
+				<span class="i-box">
+					<select class="srequire" name="atencion-inmediata" id="atencion-inmediata">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.13 ¿A quien fue informado al interior de la institución?</div>
+
+			<div class="col-5"><label>1.13.1 Grado:</label>
+				<span class="i-box">
+					<select class="srequire" name="info-grado" id="info-grado">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.13.2 Cargo:</label>
+				<span class="i-box">
+					<select class="srequire" name="info-cargo" id="info-cargo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.13.3 Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="info-name" name="info-name" placeholder="Nombre" >
+				</span>
+			</div>
+				
+			<div class="title-row">1.14 ¿A quien fue informado fuera de la institución?</div>
+
+			<div class="col-5"><label>1.14.1 Consanguinidad/relación:</label>
+				<span class="i-box">
+					<select class="srequire" name="info-ext-relacion" id="info-ext-relacion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.14.2 Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="info-ext-name" name="info-ext-name" placeholder="Nombre" >
+				</span>
+			</div>
+
+			<div class="title-row">1.15 Grupo Agente o fuente que produce la lesión:</div>
+			
+			<div class="col-5"><label>Fuente</label>
+				<span class="i-box">
+					<select class="srequire" name="fuente-agente" id="fuente-agente">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>1.15.1 Agente especifico</label>
+				<span class="i-box">
+					<select class="srequire" name="agente" id="agente">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1.15.2 Otro cuál:</label>
+				<span class="i-box">
+					<input type="text" class="" id="otro-agente" name="otro-agente" placeholder="Otro" >
+				</span>
+			</div>
+
+			<div class="title-row">1.16 Mecanismo de la lesión:</div>
+
+			<div class="col-5"><label>Mecanismo</label>
+				<span class="i-box">
+					<select class="srequire" name="meca-lesion" id="meca-lesion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.17 Nombre de la persona que reporta la novedad:</div>
+
+			<div class="col-5"> <label>Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="trequire" id="nombre-reporta" name="nombre-reporta" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">1.18 Grado de quien reporta la novedad:	</div>
+
+			<div class="col-5"> <label>Grado:</label>
+				<span class="i-box">
+					<select class="srequire" name="grado-reporta" id="grado-reporta">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">1.19 Cargo de quien reporta la novedad:</div>
+
+			<div class="col-5"> <label>Cargo:</label>
+				<span class="i-box">
+					<select class="srequire" name="cargo-reporta" id="cargo-reporta">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="line"></div>
+			
+		<div class="next next1" data-pag="1">Siguiente Módulo</div>
+		</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-2" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">2. Información sobre la persona afectada por la novedad </div>
+
+<form method="post" id="section-2">
+			
+			<div class="title-row">2.1 Nombres y Apellidos:	</div>
+
+			<div class="col-5"> <label>Primer Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="pnombre" name="pnombre" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Segundo Nombre:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="snombre" name="snombre" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Primer Apellido:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="papellido" name="papellido" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Segundo Apellido:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="sapellido" name="sapellido" placeholder="" >
+				</span>
+			</div>	
+
+			<div class="title-row">2.2 Grado:</div>
+
+			<div class="col-5"> <label>Grado:</label>
+				<span class="i-box">
+					<select name="perso-grado" id="perso-grado">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.3 Cargo</div>
+
+			<div class="col-5"> <label>Cargo:</label>
+				<span class="i-box">
+					<select name="perso-cargo" id="perso-cargo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.4 Arma / Cuerpo o Especialidad:</div>
+
+			<div class="col-5">
+				<span class="i-box">
+					<select name="arma-cuerpo-esp" id="arma-cuerpo-esp">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.5 Documento de identidad:</div>
+
+			<div class="col-5"> <label>Documento</label>
+				<span class="i-box">
+					<input type="text" class="require" id="perso-doc" name="perso-doc" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.6 Fecha de nacimiento:	</div>
+
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="require" id="date-person-nac" name="date-person-nac" value="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.7 Lugar de nacimiento:	</div>
+			
+			<div class="col-5"> <label>Lugar:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="lugar-person-nac" name="lugar-person-nac" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.8 Fecha de ingreso:</div>
+
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="require" id="date-person-ingre" name="date-person-ingre" value="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.9 Contingente:	</div>
+			
+			<div class="col-5"> 
+				<span class="i-box">
+					<input type="text" class="require" id="person-contingente" name="person-contingente" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.10 Tiempo total de servicio:</div>
+
+			<div class="col-5"><label>Años</label>
+				<span class="i-box">
+					<select name="timepo-servicio-anos" id="timepo-servicio-anos">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Meses</label>
+				<span class="i-box">
+					<select name="timepo-servicio-meses" id="timepo-servicio-meses">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.11 Tiempo en la unidad:</div>
+
+			<div class="col-5"><label>Años</label>
+				<span class="i-box">
+					<select name="timepo-servicio-anos-unidad" id="timepo-servicio-anos-unidad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Meses</label>
+				<span class="i-box">
+					<select name="timepo-servicio-meses-unidad" id="timepo-servicio-meses-unidad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.12 Tiempo laborado el día de la novedad:</div>
+
+			<div class="col-5"> <label>Horas</label>
+				<span class="i-box">
+					<div class="col-5" style="width: 50%"> <sublabel>Horas</sublabel>
+						<span class="i-box">
+						<select name="horas-laborado" id="horas-laborado">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						</span>
+					</div>
+					<div class="col-5" style="width: 50%"> <sublabel>Minutos</sublabel>
+						<span class="i-box">
+						<select name="min-laborado" id="min-laborado">
+							<option value="0">00</option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+							<option value="45">45</option>
+							<option value="46">46</option>
+							<option value="47">47</option>
+							<option value="48">48</option>
+							<option value="49">49</option>
+							<option value="50">50</option>
+							<option value="51">51</option>
+							<option value="52">52</option>
+							<option value="53">53</option>
+							<option value="54">54</option>
+							<option value="55">55</option>
+							<option value="56">56</option>
+							<option value="57">57</option>
+							<option value="58">58</option>
+							<option value="59">59</option>
+						</select>
+						</span>
+					</div>
+				</span>
+			</div>
+
+			<div class="title-row">2.13 Tiempo De Experiencia en el cargo:</div>
+
+			<div class="col-5"><label>Años</label>
+				<span class="i-box">
+					<select name="timepo-servicio-anos-cargo" id="timepo-servicio-anos-cargo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="col-5"><label>Meses</label>
+				<span class="i-box">
+					<select name="timepo-servicio-meses-cargo" id="timepo-servicio-meses-cargo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.14 Dirección de residencia:</div>
+
+			<div class="col-5"> <label>Dirección:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="person-direccion" name="person-direccion" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.15 Ciudad:	</div>
+
+			<div class="col-5"><label>Ciudad</label>
+				<span class="i-box">
+					<select name="person-ciudad" id="person-ciudad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.16 Teléfono celular:</div>
+
+			<div class="col-5"> <label>Télefono:</label>
+				<span class="i-box">
+					<input type="tel" class="require" id="person-tel" name="person-tel" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.17 Edad:</div>
+
+			<div class="col-5"> <label>Edad calculada según fecha nacimiento:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="person-edad" name="person-edad" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.18 Sexo</div>
+
+			<div class="col-5"><label>Sexo</label>
+				<span class="i-box">
+					<select name="person-sexo" id="person-sexo">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.19 Estado civil:</div>
+
+			<div class="col-5">
+				<span class="i-box">
+					<select name="person-estado" id="person-estado">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.20 Escolaridad</div>
+
+			<div class="col-5">
+				<span class="i-box">
+					<select name="person-escolaridad" id="person-escolaridad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.21 salario actual completo aproximado:</div>
+
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="person-salario" name="person-salario" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.22 Servicio de salud: </div>
+
+			<div class="col-5">
+				<span class="i-box">
+					<select name="person-servicio-salud" id="person-servicio-salud">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.23 EPS (Entidad prestadora de salud)</div>
+
+			<div class="col-5"><label>EPS</label>
+				<span class="i-box">
+					<select name="person-servicio-eps" id="person-servicio-eps">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.24 ARL (Administradora de riesgos laborales)</div>
+
+			<div class="col-5"><label>ARL</label>
+				<span class="i-box">
+					<select name="person-servicio-arl" id="person-servicio-arl">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.25 Tipo De Vinculación:</div>
+
+			<div class="col-5"><label>Tipo</label>
+				<span class="i-box">
+					<select name="person-servicio-tipo-vincu" id="person-servicio-tipo-vincu">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.26 ¿Ha sufrido accidentes, o lesiones autoinflidas/ o intento de suicidio con anterioridad?</div>
+
+			<div class="col-5"> <sublabel>Si/No</sublabel>
+					<span class="i-box">
+							<in-group class="clearfix middle">
+								<label>SI <input type="checkbox" name="groupa1[]" id=""></label>
+							</in-group>
+							<in-group class="clearfix middle">
+								<label>NO <input type="checkbox" name="groupa1[]" id=""></label>
+							</in-group>
+					</span>
+			</div>
+
+			<div class="title-row">2.27 Actividad/Estado</div>
+
+			<div class="col-5">
+				<span class="i-box">
+					<select name="person-actividad" id="person-actividad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.28 Tipo de Actividad al momento de la novedad</div>
+
+			<div class="col-5"> <label>Tipo</label>
+				<span class="i-box">
+					<select name="person-actividad-durante-novedad" id="person-actividad-durante-novedad">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.29 AFP (Administradora Privada de Fondos de Pensiones)  a la que esta afiliado:</div>
+
+			<div class="col-5"> <label>AFP</label>
+				<span class="i-box">
+					<select name="person-afp" id="person-afp">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.30 Trabajo específico desarrollado al momento de la novedad:</div>
+
+			<div class="col-5"> <label>Cuál:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="person-trabajo-especifico" name="person-trabajo-especifico" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.30-1 Tiempo de experiencia en ese trabajo específico</div>
+
+			<div class="col-5"> <label>Años</label>
+				<span class="i-box">
+					<select name="person-exp-año" id="person-exp-ano">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Meses</label>
+				<span class="i-box">
+					<select name="person-exp-meses" id="person-exp-meses">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Días</label>
+				<span class="i-box">
+					<select name="person-exp-dias" id="person-exp-dias">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">2.31 ¿había recibido capacitación acerca del trabajo en el que ocurrió la novedad especifica?</div>
+			
+			<div class="col-5"> <sublabel>Si/No</sublabel>
+					<span class="i-box">
+							<in-group class="clearfix middle">
+								<label>SI <input type="checkbox" name="groupa2[]" id=""></label>
+							</in-group>
+							<in-group class="clearfix middle">
+								<label>NO <input type="checkbox" name="groupa2[]" id=""></label>
+							</in-group>
+					</span>
+			</div>
+
+			<div class="title-row">2.31.1 Especifique cuales son la/las capacitaciones que a recibido </div>
+
+			<div class="col-5"> <label>Describa:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="person-capacitaciones-des" name="person-capacitaciones-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">2.32 Fecha del último descanso / permiso / vaciones que había tomado antes de la novedad</div>
+			
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="require" id="date-ult-desc" name="date-ult-desc" value="" >
+				</span>
+			</div>
+
+
+			<div class="title-row">2.33 Fecha del último reentrenamiento</div>
+			
+			<div class="col-5"> <label>Fecha</label>
+				<span class="i-box">
+					<input type="text" class="require" id="date-ult-reentre" name="date-ult-reentre" value="" >
+				</span>
+			</div>
+
+
+			<div class="line"></div>
+			
+		<div class="next" data-pag="2">Siguiente Módulo</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+<div class="section-3" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">3. Descripción de la novedad (Accidente/incidente o evento)</div>
+
+<form method="post" id="section-3">
+
+			<div class="row clearfix texture">
+
+			<div class="title-row">3.1 Descripción de los hechos que ocurrieron (a nivel personal y en el trabajo) antes de que se presentara el evento: ¿Cuándo / Dónde / Qué / Por qué /A quién /Cómo /Cuánto?</div>
+
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-hechos-presonal" id="des-hechos-presonal" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">3.2  Descripción detallada de la novedad: ¿Cuándo / Dónde / Qué / Por qué /A quién /Cómo /Cuánto?</div>
+			
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-detallada-novedad" id="des-detallada-novedad" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">3.3  Descripción detallada de los hechos que ocurrieron después de presentada la novedad: ¿Cuándo / Dónde / Qué / Por qué /A quién /Cómo /Cuánto?</div>
+			
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-detallada-hechos" id="des-detallada-hechos" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">3.4 ¿Qué posible (s) situación (es) o falla (s)  determinó (ron) la ocurrencia de la novedad?</div>
+			
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-falla" id="des-falla" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">3.5 ¿Cuál pudo ser la peor consecuencia de la novedad que se está analizando? (ej.. lesiones a otras personas, una lesión mayor a la ocurrida etc.)</div>
+			
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-consecuencias" id="des-consecuencias" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">3.6 Describa las actividades de promoción, prevención, mitigación y control que se han desarrollado en la unidad para evitar la ocurrencia de esta novedad:</div>
+			
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-act" id="des-act" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="line"></div>
+			
+			<div class="next" data-pag="3">Siguiente Módulo</div>
+
+			</div>
+
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-4" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">4.  Análisis de causalidad</div>
+
+<form method="post" id="section-4">
+
+			<div class="title-row titleh2">4.1 Tipo de familia</div>
+
+			<div class="col-5"> <label>100.  Condiciones del equipo</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-equipo" id="condi-equipo" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con condiciones del equipo</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-equipo-des" name="condi-equipo-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>200. Condiciones del lugar</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-lugar" id="condi-lugar" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con condiciones del lugar</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-lugar-des" name="condi-lugar-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>300. Condiciones ambientales</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-amb" id="condi-amb" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con condiciones ambientales</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-amb-des" name="condi-amb-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>400. Condiciones de orden publico</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-orden-publico" id="condi-orden-publico" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con condiciones de orden publico</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-orden-publico-des" name="condi-orden-publico-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">500. Condiciones organizacionales</div>
+
+			<div class="col-5"> <label>501.  Capacitación y gestión del cambio</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-org-cap" id="condi-org-cap" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con capacitación y gestión del cambio</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-org-des" name="condi-org-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>502. Comunicación y relación con otras personas</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-com-relacion" id="condi-com-relacion" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con comunicación y relación con otras personas</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-com-relacion-des" name="condi-com-relacion-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>503. Cultura de seguridad</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-cult-seguridad" id="condi-cult-seguridad" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con la cultura de seguridad</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-cult-seguridad-des" name="condi-cult-seguridad-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>504. Liderazgo</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-liderazgo" id="condi-liderazgo" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con el liderazgo</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-liderazgo-des" name="condi-liderazgo-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>505. Procedimientos	</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-procedimiento" id="condi-procedimiento" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con los procedimientos</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-procedimiento-des" name="condi-procedimiento-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>506. Recursos</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-recursos" id="condi-recursos" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con los recursos</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-recursos-des" name="condi-recursos-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>507. Supervisión	</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-supervision" id="condi-supervision" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con la supervisión</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-supervision-des" name="condi-supervision-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">600. Condiciones personales <br>¿El accidente pudo ser causado o influido por  Condiciones personales? De qué tipo?</div>
+
+			<div class="col-5"> <label>601. Competencias</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-competencia" id="condi-competencia" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con las competencias</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-competencia-des" name="condi-competencia-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>602. Condiciones cognitivas</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-cognitiva" id="condi-cognitiva" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con las condiciones cognitivas</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-cognitiva-des" name="condi-cognitiva-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>603. Condiciones emocionales	</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-emocionales" id="condi-emocionales" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con las condiciones emocionales	</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-emocionales-des" name="condi-emocionales-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>604. Relación con otros</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-con-otros" id="condi-con-otros" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con la relación con otros</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-con-otros-des" name="condi-con-otros-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>605. Condiciones físicas	</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-fisicas" id="condi-fisicas" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con las condiciones físicas	</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-fisicas-des" name="condi-fisicas-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>606. Condiciones comportamentales </label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-comportamentales" id="condi-comportamentales" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con los comportamientos del accidentado</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-comportamentales-des" name="condi-comportamentales-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">700. Comportamiento de terceros	</div>
+			<div class="col-5"> <label>700. Comportamiento de terceros</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-terceros" id="condi-terceros" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con los comportamientos de terceros	</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-terceros-des" name="condi-terceros-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">800 - 1000. Comportamiento del accidentado <br>¿El accidente pudo ser causado o influido por un comportamiento riesgoso? De qué tipo?	</div>
+
+			<div class="col-5"> <label>800. Identificación y control de peligros</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-id-control" id="condi-id-control" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con la identificación y control de los peligros	</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-id-control-des" name="condi-id-control-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>820. Uso de material de intendencia y de guerra/ comunicaciones / equipo especial/ herramienta</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-uso-material" id="condi-uso-material" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con el Uso de material de intendencia y de guerra/ comunicaciones / equipo especial/ herramienta</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-uso-material-des" name="condi-uso-material-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>840. Manejo y transporte de cargas</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-manejo-transporte" id="condi-manejo-transporte" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con el manejo y transporte de cargas</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-manejo-transporte-des" name="condi-manejo-transporte-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>860. Uso de EPP / kit de protección para motociclista/deportes	</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-epp-kit" id="condi-epp-kit" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con el uso de EPP / kit de protección para motociclista/deportes</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-epp-kit-des" name="condi-epp-kit-des" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con el uso de vehículos/ montacargas/ motos	</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-epp-kit-des-vehi" name="condi-epp-kit-des-vehi" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>900. Posturas</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-posturas" id="condi-posturas" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con las posturas</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-posturas-des" name="condi-posturas-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>920. Manejo de armamento, municiones y explosivos, químicos y otros  materiales peligrosos</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-arm-mun-explo" id="condi-arm-mun-explo" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con el manejo de armamento, municiones y explosivos, químicos y otros  materiales peligrosos</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-arm-mun-explo-des" name="condi-arm-mun-explo-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>940. Comportamientos en la vía</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-comp-via" id="condi-comp-via" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con comportamientos en la vía</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-comp-via-des" name="condi-comp-via-des" placeholder="" >
+				</span>
+			</div>
+
+			<div class="col-5"> <label>1000. Comportamientos asociados a agresiones y lesiones autoinflingidas</label>
+				<span class="i-box">
+					<select class="selMultiple" name="condi-autoinflingidas" id="condi-autoinflingidas" multiple>
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+			<div class="col-5"> <label>Describa las causas relacionadas con los comportamientos asociados a agresiones y lesiones autoinflingidas</label>
+				<span class="i-box">
+					<input type="text" class="require" id="condi-autoinflingidas-des" name="condi-autoinflingidas-des" placeholder="" >
+				</span>
+			</div>
+
+
+
+			<div class="line"></div>
+			<div class="next" data-pag="4">Siguiente Módulo</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-5 transito" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">5. Información vial (diligenciar en caso de accidentes de tránsito)</div>
+
+<form method="post" id="section-5">
+
+			<div class="title-row titleh2">Vehículo 1</div>
+
+			<div class="title-row">Tipo Vehículo</div>
+			<div class="col-5">
+				<span class="i-box">
+					<select name="vial-tipo-vehi" id="vial-tipo-vehi">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">Placa</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-placa" name="vial-placa" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Marca / Modelo</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-marca" name="vial-marca" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Cilindraje</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-cilindraje" name="vial-cilindraje" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Vehículo Propio	</div>
+			<div class="col-5"> <sublabel>Si/No</sublabel>
+					<span class="i-box">
+							<in-group class="clearfix middle">
+								<label>SI <input type="checkbox" name="groupa3[]" id=""></label>
+							</in-group>
+							<in-group class="clearfix middle">
+								<label>NO <input type="checkbox" name="groupa3[]" id=""></label>
+							</in-group>
+					</span>
+			</div>
+
+			<div class="title-row">Departamento Responsable</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-dept-res" name="vial-dept-res" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Fecha de vencimiento del SOAT</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-soat" name="vial-soat" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Estado licencia de conducción (RUNT y SIMIT)	</div>
+			<div class="col-5">
+				<span class="i-box">
+					<select name="vial-estado-licencia" id="vial-estado-licencia">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">Estado de comparendos</div>
+			<div class="col-5"> <sublabel>Tiene/No tiene</sublabel>
+					<span class="i-box">
+							<in-group class="clearfix middle">
+								<label>Tiene <input type="checkbox" name="groupa4[]" id=""></label>
+							</in-group>
+							<in-group class="clearfix middle">
+								<label>No Tiene <input type="checkbox" name="groupa4[]" id=""></label>
+							</in-group>
+					</span>
+			</div>
+
+			<div class="title-row">Descripción Daños</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-des-danos" name="vial-des-danos" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Costo total reparación</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-costo-rep" name="vial-costo-rep" placeholder="$" >
+				</span>
+			</div>
+
+
+
+			<div class="title-row titleh2">Vehículo 2</div>
+
+			<div class="title-row">Tipo Vehículo</div>
+			<div class="col-5">
+				<span class="i-box">
+					<select name="vial-seg-tipo-vehi" id="vial-seg-tipo-vehi">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">Placa</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-placa" name="vial-seg-placa" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Marca / Modelo</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-marca" name="vial-seg-marca" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Cilindraje</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-cilindraje" name="vial-seg-cilindraje" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Vehículo Propio	</div>
+			<div class="col-5"> <sublabel>Si/No</sublabel>
+					<span class="i-box">
+							<in-group class="clearfix middle">
+								<label>SI <input type="checkbox" name="groupa3[]" id=""></label>
+							</in-group>
+							<in-group class="clearfix middle">
+								<label>NO <input type="checkbox" name="groupa3[]" id=""></label>
+							</in-group>
+					</span>
+			</div>
+
+			<div class="title-row">Departamento Responsable</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-dept-res" name="vial-seg-dept-res" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Fecha de vencimiento del SOAT</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-soat" name="vial-seg-soat" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Estado licencia de conducción (RUNT y SIMIT)	</div>
+			<div class="col-5">
+				<span class="i-box">
+					<select name="vial-seg-estado-licencia" id="vial-seg-estado-licencia">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">Estado de comparendos</div>
+			<div class="col-5"> <sublabel>Tiene/No tiene</sublabel>
+					<span class="i-box">
+							<in-group class="clearfix middle">
+								<label>Tiene <input type="checkbox" name="groupa4[]" id=""></label>
+							</in-group>
+							<in-group class="clearfix middle">
+								<label>No Tiene <input type="checkbox" name="groupa4[]" id=""></label>
+							</in-group>
+					</span>
+			</div>
+
+			<div class="title-row">Descripción Daños</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-des-danos" name="vial-seg-des-danos" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Costo total reparación</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="vial-seg-costo-rep" name="vial-seg-costo-rep" placeholder="$" >
+				</span>
+			</div>
+
+			<div class="line"></div>
+			<div class="next" data-pag="5">Siguiente Módulo</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-6" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">6. Descripción de las pérdidas:</div>
+
+<form method="post" id="section-6">
+
+			<div class="row clearfix texture">
+
+			<div class="title-row">Humanas</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-perd-hum" id="des-perd-hum" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">Ambientales</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-perd-amb" id="des-perd-amb" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">Materiales (equipos e infraestructura)</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-perd-mater" id="des-perd-mater" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">Otras (cuales?)</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-perd-otras" id="des-perd-otras" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row">TIEMPO DE INCAPACIDAD EN DIAS</div>
+			<div class="col-5"> <label>Días</label>
+				<span class="i-box">
+					<input type="num" class="require" id="des-perd-dias" name="des-perd-dias" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">NÚMERO DE MUERTES</div>
+			<div class="col-5"> <label>Número</label>
+				<span class="i-box">
+					<input type="num" class="require" id="des-perd-numero-muertos" name="des-perd-numero-muertos" placeholder="" >
+				</span>
+			</div>
+
+
+			<div class="title-row">AFECTACIÓN EN EL PROCESO U OPERACIÓN</div>
+			<div class="col-5">
+				<span class="i-box">
+					<select name="des-perd-afectacion" id="des-perd-afectacion">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">ESTIMACIÓN DEL VALOR DE LAS  PERDIDAS MATERIALES Y AMBIENTALES GENERADAS POR EL EVENTO: 	</div>
+			<div class="col-5">
+				<span class="i-box">
+					<select name="des-perd-estimacion-valor" id="des-perd-estimacion-valor">
+						<option value="0">Selecciona</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="title-row">DESCRIPCION GENERAL DE LA LESION:</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="des-perd-general" id="des-perd-general" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="line"></div>
+			<div class="next" data-pag="6">Siguiente Módulo</div>
+
+			</div>
+
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-7" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">7. Descripción de las Testigos:</div>
+
+<form method="post" id="section-7">
+
+			<div class="row clearfix texture">
+			<div class="title-row titleh2">Nombre del entrevistado N° 1: Testigo</div>
+
+			<div class="col-5"> <label>Identificación: </label>
+				<span class="i-box">
+					<input type="text" class="require" id="entre-id-uno" name="entre-id-uno" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Cargo / Oficio :</label>
+				<span class="i-box">
+					<input type="text" class="require" id="entre-cargo-uno" name="entre-cargo-uno" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Teléfono:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="entre-tel-uno" name="entre-tel-uno" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Descripción de los hechos ocurridos antes, durante y después del evento (Según narración del entrevistado)</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="entre-des-uno" id="entre-des-uno" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+
+			<div class="title-row titleh2">Nombre del entrevistado N° 2: Testigo</div>
+
+			<div class="col-5"> <label>Identificación: </label>
+				<span class="i-box">
+					<input type="text" class="require" id="entre-id-dos" name="entre-id-dos" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Cargo / Oficio :</label>
+				<span class="i-box">
+					<input type="text" class="require" id="entre-cargo-dos" name="entre-cargo-dos" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Teléfono:</label>
+				<span class="i-box">
+					<input type="text" class="require" id="entre-tel-dos" name="entre-tel-dos" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Descripción de los hechos ocurridos antes, durante y después del evento (Según narración del entrevistado)</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="entre-des-dos" id="entre-des-dos" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+
+			<div class="title-row titleh2">ENTREVISTA ACCIDENTADO/ AFECTADO / NOMBRE:</div>
+
+			<div class="title-row">Descripción de los hechos ocurridos antes, durante y después del evento (Según narración del entrevistado afectado)</div>
+			<div class="col-full"><label>Descripción</label>
+			<span class="i-box">
+				<textarea name="entre-des-afectado" id="entre-des-afectado" style="width: 100%;height:100px"></textarea>
+			</span>
+			</div>
+			
+
+			<div class="line"></div>
+			<div class="next" data-pag="7">Siguiente Módulo</div>
+
+			</div>
+
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+<div class="section-8" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<form method="post" id="section-8">
+
+			<div class="title-row titleh">8. Revisión por parte del comandante </div>
+
+			<div class="title-row titleh2">¿Se cumplió con el objetivo de la investigación técnica?	</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="rev-cumplio" name="rev-cumplio" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row titleh2">¿Se identificaron causas?</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="rev-causas" name="rev-causas" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row titleh2">¿Las medidas correctivas y preventivas se corresponden con las causas identificadas?	</div>
+			<div class="col-5">
+				<span class="i-box">
+					<input type="text" class="require" id="rev-medidas" name="rev-medidas" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row titleh">9. Registro fotográfico, audiovisual y documental	</div>
+
+			<div class="title-row">Archivo 1</div>
+			<div class="col-5"> <label>Seleccione Archivo</label>
+				<span class="i-box">
+					<input type="file" class="require" id="registro-file1" name="registro-file1" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Descripción</label>
+				<span class="i-box">
+					<input type="text" class="require" id="registro-file-name1" name="registro-file-name1" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Archivo 2</div>
+			<div class="col-5"> <label>Seleccione Archivo</label>
+				<span class="i-box">
+					<input type="file" class="require" id="registro-file2" name="registro-file2" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Descripción</label>
+				<span class="i-box">
+					<input type="text" class="require" id="registro-file-name2" name="registro-file-name2" placeholder="" >
+				</span>
+			</div>
+
+			<div class="title-row">Archivo 3</div>
+			<div class="col-5"> <label>Seleccione Archivo</label>
+				<span class="i-box">
+					<input type="file" class="require" id="registro-file3" name="registro-file3" placeholder="" >
+				</span>
+			</div>
+			<div class="col-5"> <label>Descripción</label>
+				<span class="i-box">
+					<input type="text" class="require" id="registro-file-name3" name="registro-file-name3" placeholder="" >
+				</span>
+			</div>
+
+			<div class="line"></div>
+			<div class="next" data-pag="8">Siguiente Módulo</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+<div class="section-9" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">10.  Plan de acción o mejoramiento</div>
+
+<form method="post" id="section-9">
+
+			<div class="title-row titleh2">Inmediatas (próximas 4 semanas)</div>
+			<div class="boxcontent clearfix boxinmediata" style="float:left">
+
+			</div>
+			<div class="add-item plan" data-box="inmediata">Agregar Plan de Acción Inmediata</div>
+
+
+			<div class="title-row titleh2">A mediano plazo (próximos 10 meses)</div>
+			<div class="boxcontent clearfix boxmediana" style="float:left">
+
+			</div>
+			<div class="add-item plan" data-box="mediana">Agregar Plan de Acción Mediana</div>
+
+
+
+			<div class="title-row titleh2">Largo plazo (mas de 10 meses)</div>
+			<div class="boxcontent clearfix boxlarga" style="float:left">
+				
+			</div>
+			<div class="add-item plan" data-box="larga">Agregar Plan de Acción Larga</div>
+
+
+
+
+			<div class="line"></div>
+			<div class="next" data-pag="9">Siguiente Módulo</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+<div class="section-10" style="display:none">
+
+<!-- Fecha - Usuario -->	
+<div class="row clearfix texture">
+			<div class="col-5"> <label style="text-align: center">Reporte No EN-000-<span class="reporteNo"></span></label></div>
+
+			<div class="col-5"> <label>Fecha</label><span class="i-box"><input type="text" class="require date-ini" value="Domingo, 7 Febrero, 2016" style=""><input type="hidden" name="date_ficha" id="date_ficha"></span></div>
+			<div class="col-5"> <label>Usuario</label><span class="i-box"><input type="text" class="require user" name="usuario" id="usuario" placeholder="Usuario" value="Usuario 1" readonly></span></div>
+</div>
+
+<div class="title-row titleh">11.  Equipo Investigador</div>
+
+<form method="post" id="section-10">
+
+			<div class="title-row titleh2">Adjunta Equipo investigador y firmas autorizadas</div>
+			
+			<div class="title-row">Adjunto</div>
+			<div class="col-5"> <label>Seleccione Archivo</label>
+				<span class="i-box">
+					<input type="file" class="require" id="final-file" name="final-file" placeholder="" >
+				</span>
+			</div>
+
+
+
+			<div class="line"></div>
+			<div class="next" data-pag="10">Enviar</div>
+<input type="hidden" val="0" class="position" name="position">
+</form>
+</div>
+
+
+<script src="http://soouse.com/sipre/platform/js/jquery-1.12.0.min.js"></script>
+<script src="http://soouse.com/sipre/platform/js/jquery-ui.min.js"></script>
+<script src="http://soouse.com/sipre/platform/js/tipso.min.js"></script>
+<script src="http://soouse.com/sipre/platform/js/functions.js"></script>
+
+<link rel="stylesheet" href="include/sweetalert2/sweetalert2.min.css">
+<script src="include/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+	//GetId
+	header("access-control-allow-origin: *");
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	var idMain = getParameterByName("id");
+	$(".position").val(idMain);
+	$(".reporteNo").html(idMain);
+	//Listas
+	$.ajax({
+		    //url : 'http://administrador:7001/app/resources/li/get',
+		    url :  'http://localhost:7001/SipreMaven/resources/listas/getJ',
+		    data : {},
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		        console.log(json);
+		        createOptions(json);
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema al cargar las listas');
+		    }
+	});
+	function createOptions(json) {
+		$.each(json, function(i, item) {
+			for (var j = 0; j < json[i][0].length; j++) {
+				$("#"+i).append('<option value="'+json[i][0][j]+'">'+json[i][1][j]+'</option>');
+			}
+		});
+	}
+	//Fecha actual
+	var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	var f = new Date();
+	$(".date-ini").val(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+	//Dates
+	$( "#date-analisis" ).datepicker({ changeMonth: true, changeYear: true });
+	$( "#date-novedad" ).datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").datepicker({ changeMonth: true, changeYear: true });
+	$("#date-nacimiento").change(function(){
+		var ed = calcular_edad($("#date-nacimiento").val());
+		$("#edad").html(ed+" Años");
+	});
+	//Checkbox function
+	$('input[type="checkbox"]').on('change', function() {
+	var pare = $(this).parent();
+	var paren = $(pare).parent();
+	var parent = $(paren).parent();
+	if(!$(parent).hasClass('multiple')){
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+	}
+	});
+
+
+//Form next
+$('.next').click(function(){
+	var pag = $(this).data('pag');
+	console.log("data:"+pag);
+	var errorst = 0;
+	var errorss = 0;
+    $(".section-"+pag+" .trequire").map(function(){
+        if( !$(this).val() ) { 
+        	$(this).addClass('warning'); errorst++;
+        } else if ($(this).val()) {
+        	$(this).removeClass('warning');
+        }   
+    });
+    $(".section-"+pag+" .srequire").map(function(){
+        if( $(this).val() == 0 ) { 
+        	$(this).addClass('warning'); errorss++;
+        } else if ($(this).val() != 0) {
+        	$(this).removeClass('warning');
+        }   
+    });
+	console.log("errors found text:"+errorst);
+	console.log("errors found select:"+errorss);
+
+    if(false){
+        alert("Hay un campo sin completar, verifique por favor.");
+    } else {
+    	var datanum = $(this).data("pag");
+    	if(datanum==9){
+			$(".boxadd").each(function(){
+				var formData = new FormData();
+				var position = $(".position").val();
+				var type = $(this).data("type");
+				var datas = $(this).serialize();
+				console.log(datas);
+				$.ajax({
+				    url : 'http://soouse.com/sipre/controller/form-'+datanum+'-investigacion.php',
+				    data : datas+'&type='+type+'&position='+position,
+				    type : 'POST',
+				    dataType : 'json',
+				    success : function(json) {
+				    	console.log(json)
+				        if(json.status>0){
+				        $(".section-"+pag).hide();
+				    	console.log(pag);
+				    	var pag_2 = pag+1;
+				    	console.log(pag_2);
+				    	$(".section-"+pag_2).fadeIn();
+				    	$('#up').click();
+				    	}
+				    },
+				    error : function(xhr, status) {
+				        alert('Disculpe, existió un problema');
+				    }
+				});
+
+			});
+		} else if(datanum==10){
+				var inputFile = document.getElementById("final-file");
+				var image = inputFile.files[0];
+				var form_data = new FormData();  
+				var position = $(".position").val();
+				form_data.append('position',position);  
+				form_data.append('file',image); 
+				console.log(form_data);
+				$.ajax({
+                url: 'http://soouse.com/sipre/controller/form-'+datanum+'-investigacion.php', 
+            	type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                success: function(data){
+				var dat = data.trim();
+				console.log(dat);
+					if(dat>"0"){
+						swal(
+						    'Firmas enviadas!',
+						    'Proceso Completo.',
+						    'success'
+						  )
+						location.href = "../home/home.html";
+					} else if(dat=="0"){
+						swal(
+						    'Error!',
+						    'Intente nuevamente.',
+						    'warning'
+						  )
+					}
+				}
+				});
+		} else {
+		var data = $("#section-"+datanum).serialize();
+		console.log(data);
+		$.ajax({
+		    url : 'http://soouse.com/sipre/controller/form-'+datanum+'-investigacion.php',
+		    data : data,
+		    type : 'POST',
+		    dataType : 'json',
+		    success : function(json) {
+		    	console.log(json)
+		        if(json.status>0){
+		        $(".section-"+pag).hide();
+		    	console.log(pag);
+		    	var pag_2 = pag+1;
+		    	console.log(pag_2);
+		    	$(".section-"+pag_2).fadeIn();
+		    	$('#up').click();
+		    	}
+		    },
+		    error : function(xhr, status) {
+		        alert('Disculpe, existió un problema');
+		    }
+		});
+		}
+    }
+});
+
+$('.dinamico input[type="checkbox"]').on('change', function() {
+if (this.checked && $(this).hasClass('depende')) {
+	$(".opcional").fadeIn();
+} else {
+	$('.opcional').fadeOut();
+}
+});
+
+$("#novedad-interna-fuerza").change(function(){
+	if($(this).val()!=1){
+		$("#section-5").hide();
+	}
+})
+
+$(".plan").click(function(){
+	var box = $(this).data("box");
+	$(".box"+box).append('<form class="boxadd" data-type="'+box+'" method="post"><div class="col-5"><label>10.1.1 Acciones preventivas y/o correctivas</label><span class="i-box"><input type="text" class="require" id="plan-accion-prev" name="plan-accion-prev" placeholder="" ></span></div><div class="col-5"><label>10.1.2 Responsable de la ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-res" name="plan-accion-res" placeholder="" ></span></div><div class="col-5"><label>10.1.3 Fecha de ejecución</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-exe" name="plan-accion-date-exe" placeholder="" ></span></div><div class="col-5"><label>10.1.4 Recursos</label><span class="i-box"><input type="text" class="require" id="plan-accion-recursos" name="plan-accion-recursos" placeholder="" ></span></div><div class="col-5"><label>10.1.5 Responsable de hacer cumplir la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-res-cumplir" name="plan-accion-res-cumplir" placeholder="" ></span></div><div class="col-5"><label>10.1.6 Fecha de verificación de cierre de la acción</label><span class="i-box"><input type="text" class="require" id="plan-accion-date-close" name="plan-accion-date-close" value="Fecha Ajustada por Directivas" disabled></span></div></form>');
+
+})
+
+$("#home").click(function(){
+	location.href = "../home/home.html";
+});
+</script>
+</body>
+</html>
